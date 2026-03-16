@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Yu Dian Dong</title>
+  <meta name="description" content="UX Designer who makes complex things feel simple.">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <nav class="site-nav" aria-label="Primary navigation">
+      <div class="site-nav__inner">
+        <a href="index.html" class="site-nav__brand">
+          <span class="site-nav__avatar-wrap">
+            <img
+              src="images/hero-portrait.jpg"
+              alt=""
+              class="site-nav__avatar"
+              width="40"
+              height="40"
+            >
+            <span class="site-nav__pulse" aria-hidden="true"></span>
+          </span>
+          <span class="site-nav__brand-text">
+            <span class="site-nav__brand-name">Yu Dian Dong</span>
+            <span class="site-nav__brand-status">Open for work</span>
+          </span>
+        </a>
+
+        <div class="site-nav__links">
+          <a href="index.html" class="site-nav__link">Home</a>
+          <a href="#work" class="site-nav__link">Work</a>
+          <a href="about.html" class="site-nav__link">About</a>
+        </div>
+
+        <div class="site-nav__actions">
+          <a
+            href="https://drive.google.com/file/d/1mg6feJMw2vVv7QX_KPrRZFSz7zgdr4P-/view?usp=sharing"
+            class="site-nav__resume"
+            target="_blank"
+            rel="noopener noreferrer"
+          >Resume<span class="site-nav__resume-arrow"> ↗</span></a>
+        </div>
+
+        <button class="site-nav__toggle" type="button" aria-label="Toggle navigation" aria-expanded="false">
+          <span class="site-nav__toggle-line"></span>
+          <span class="site-nav__toggle-line"></span>
+          <span class="site-nav__toggle-line"></span>
+        </button>
+      </div>
+    </nav>
+
+    <div class="site-nav__overlay" aria-hidden="true">
+      <nav class="site-nav__overlay-menu" aria-label="Mobile navigation">
+        <a href="index.html" class="site-nav__overlay-link" data-nav-link>Home</a>
+        <a href="#work" class="site-nav__overlay-link" data-nav-link>Work</a>
+        <a href="about.html" class="site-nav__overlay-link" data-nav-link>About</a>
+        <a
+          href="https://drive.google.com/file/d/1mg6feJMw2vVv7QX_KPrRZFSz7zgdr4P-/view?usp=sharing"
+          class="site-nav__overlay-link"
+          target="_blank"
+          rel="noopener noreferrer"
+          data-nav-link
+        >Resume</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" aria-labelledby="hero-heading">
+      <div class="hero__inner">
+        <div class="hero__grid">
+          <div class="hero__text">
+            <h1 id="hero-heading" class="hero__title">Hi, I'm Yu Dian.</h1>
+            <p class="hero__subtext">
+              A User Experience Designer, passionate about finding simple solutions to complex problems!
+            </p>
+            <div class="hero__actions">
+              <a href="#work" class="hero__btn hero__btn--primary">Check out my work</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="work" class="work" aria-labelledby="work-heading">
+      <div class="work__inner">
+        <h2 id="work-heading" class="work__title">Projects</h2>
+
+        <div class="work__grid">
+          <a href="case-study-nest.html" class="case-card case-card--link">
+            <div class="case-card__media case-card__media--nest">
+              <img
+                src="images/Nest-Thermostat_Thumbnail.jpg"
+                alt="Nest Thermostat Redesign project thumbnail"
+              >
+            </div>
+            <div class="case-card__body">
+              <p class="case-card__title-line">
+                <span class="case-card__title">Nest Thermostat Redesign</span><span class="case-card__sep"> · </span><span class="case-card__time">3 min</span>
+              </p>
+              <p class="case-card__desc">
+                Redesigning Nest for eco-conscious users through a more sustainable and
+                accessible interface.
+              </p>
+            </div>
+          </a>
+
+          <a href="case-study-deloitte.html" class="case-card case-card--link">
+            <div class="case-card__media case-card__media--deloitte">
+              <img
+                src="images/Deloitte_Thumbnail.webp"
+                alt="Deloitte x SCADpro project thumbnail"
+              >
+            </div>
+            <div class="case-card__body">
+              <p class="case-card__title-line">
+                <span class="case-card__title">Deloitte × SCADpro</span><span class="case-card__sep"> · </span><span class="case-card__time">2 min</span>
+              </p>
+              <p class="case-card__desc">
+                Designing inclusive digital solutions for aging users to improve trust and usability
+                in government service apps.
+              </p>
+            </div>
+          </a>
+
+          <a href="case-study-finra.html" class="case-card case-card--link">
+            <div class="case-card__media case-card__media--finra">
+              <img
+                src="images/Finra_thumbnail.jpg"
+                alt="FINRA x SCADpro project thumbnail"
+              >
+            </div>
+            <div class="case-card__body">
+              <p class="case-card__title-line">
+                <span class="case-card__title">FINRA × SCADpro</span><span class="case-card__sep"> · </span><span class="case-card__time"></span>
+              </p>
+              <p class="case-card__desc">
+                Unifying the FINRA digital ecosystem into a cohesive, role and task-based workflow for financial professionals.
+              </p>
+            </div>
+          </a>
+
+          <div class="case-card case-card--static" aria-label="New Project (Coming Soon)">
+            <div class="case-card__media case-card__media--placeholder">
+      
+              <span class="case-card__placeholder-text">Coming Soon</span>
+            </div>
+            <div class="case-card__body">
+              <p class="case-card__title-line">
+                <span class="case-card__title">New Project Coming Soon</span><span class="case-card__sep"> · </span><span class="case-card__time">Stay Tuned...</span>
+              </p>
+              <p class="case-card__desc">
+              
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="contact-footer">
+    <div class="contact-footer__inner">
+      <div class="contact-footer__left">
+        <a href="index.html" class="contact-footer__monogram">YD</a>
+        <p class="contact-footer__tagline">
+          More projects and experiences are always on the way. Let's keep in touch!
+        </p>
+        <p class="contact-footer__copyright">© 2026 Yu Dian Dong. All Rights Reserved.</p>
+      </div>
+
+      <div class="contact-footer__right">
+        <div class="contact-footer__col">
+          <h3>Connect</h3>
+          <ul class="contact-footer__links">
+            <li>
+              <button type="button" id="copy-email" class="contact-footer__copy-btn">Copy Email</button>
+            </li>
+            <li>
+              <a href="https://www.linkedin.com/in/yu-dian-dong/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+            </li>
+            <li>
+              <a href="https://www.instagram.com/yudian.dong/" target="_blank" rel="noopener noreferrer">Instagram</a>
+            </li>
+          </ul>
+        </div>
+        <div class="contact-footer__col">
+          <h3>About</h3>
+          <ul class="contact-footer__links">
+            <li><a href="about.html">About Me</a></li>
+            <li>
+              <a href="https://drive.google.com/file/d/1mg6feJMw2vVv7QX_KPrRZFSz7zgdr4P-/view?usp=sharing" target="_blank" rel="noopener noreferrer">Resume</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Chat widget (homepage only) -->
+  <div class="chat-widget" id="chat-widget" aria-hidden="false">
+    <div class="chat-overlay" id="chat-overlay" aria-hidden="true"></div>
+    <button type="button" class="chat-trigger" id="chat-trigger" aria-label="Open message popup" aria-expanded="false">
+      <svg class="chat-trigger__icon" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+        <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>
+      </svg>
+    </button>
+    <div class="chat-popup" id="chat-popup" role="dialog" aria-label="Message Yu Dian" aria-hidden="true">
+      <div class="chat-popup__header">
+        <span class="chat-popup__emoji" aria-hidden="true">👋</span>
+        <div class="chat-popup__header-text">
+          <span class="chat-popup__name">Yu Dian</span>
+          <span class="chat-popup__title">User Experience Designer</span>
+        </div>
+        <button type="button" class="chat-popup__close" id="chat-close" aria-label="Close popup">&times;</button>
+      </div>
+      <div class="chat-popup__body">
+        <p class="chat-popup__greeting">Hey there! 👋</p>
+        <p class="chat-popup__line">Want to chat about design, products, or anything digital?</p>
+        <p class="chat-popup__line">Click below to message me on LinkedIn!</p>
+        <a href="https://www.linkedin.com/in/yu-dian-dong/" target="_blank" rel="noopener noreferrer" class="chat-popup__linkedin">
+          <svg class="chat-popup__linkedin-icon" width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+            <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+          </svg>
+          <span>Message on LinkedIn</span>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,776 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About · Yu Dian Dong</title>
+  <meta name="description" content="Learn more about UX Designer Yu Dian Dong, their background, and approach to human-centered design.">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <nav class="site-nav" aria-label="Primary navigation">
+      <div class="site-nav__inner">
+        <a href="index.html" class="site-nav__brand">
+          <span class="site-nav__avatar-wrap">
+            <img
+              src="images/hero-portrait.jpg"
+              alt=""
+              class="site-nav__avatar"
+              width="40"
+              height="40"
+            >
+            <span class="site-nav__pulse" aria-hidden="true"></span>
+          </span>
+          <span class="site-nav__brand-text">
+            <span class="site-nav__brand-name">Yu Dian Dong</span>
+            <span class="site-nav__brand-status">Open for work</span>
+          </span>
+        </a>
+
+        <div class="site-nav__links">
+          <a href="index.html" class="site-nav__link">Home</a>
+          <a href="index.html#work" class="site-nav__link">Work</a>
+          <a href="about.html" class="site-nav__link">About</a>
+        </div>
+
+        <div class="site-nav__actions">
+          <a
+            href="https://drive.google.com/file/d/1mg6feJMw2vVv7QX_KPrRZFSz7zgdr4P-/view?usp=sharing"
+            class="site-nav__resume"
+            target="_blank"
+            rel="noopener noreferrer"
+          >Resume<span class="site-nav__resume-arrow"> ↗</span></a>
+        </div>
+
+        <button class="site-nav__toggle" type="button" aria-label="Toggle navigation" aria-expanded="false">
+          <span class="site-nav__toggle-line"></span>
+          <span class="site-nav__toggle-line"></span>
+          <span class="site-nav__toggle-line"></span>
+        </button>
+      </div>
+    </nav>
+
+    <div class="site-nav__overlay" aria-hidden="true">
+      <nav class="site-nav__overlay-menu" aria-label="Mobile navigation">
+        <a href="index.html" class="site-nav__overlay-link" data-nav-link>Home</a>
+        <a href="index.html#work" class="site-nav__overlay-link" data-nav-link>Work</a>
+        <a href="about.html" class="site-nav__overlay-link" data-nav-link>About</a>
+        <a
+          href="https://drive.google.com/file/d/1mg6feJMw2vVv7QX_KPrRZFSz7zgdr4P-/view?usp=sharing"
+          class="site-nav__overlay-link"
+          target="_blank"
+          rel="noopener noreferrer"
+          data-nav-link
+        >Resume</a>
+      </nav>
+    </div>
+  </header>
+
+  <div class="page-progress" aria-hidden="true">
+    <div class="page-progress__inner">
+      <div class="page-progress__track">
+        <div class="page-progress__bar"></div>
+      </div>
+    </div>
+  </div>
+
+  <main class="case-study">
+    <div class="case-study__inner">
+      <!-- Section 1: Hero -->
+      <section
+        id="about-hero"
+        class="reveal"
+        style="
+          min-height: 100vh;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          padding: var(--space-64) 0 var(--space-48);
+        "
+      >
+        <div style="margin-top: var(--space-48);"></div>
+        <div class="about-hero__content" style="display: flex; flex-wrap: wrap; align-items: center; gap: var(--space-48); justify-content: space-between;">
+          <div>
+            <p
+              style="
+                font-family: 'Inter', system-ui, sans-serif;
+                font-size: 1.8rem;
+                font-weight: 500;
+                letter-spacing: 0.14em;
+                text-transform: uppercase;
+                color: #007FFF;
+                margin: 0 0 var(--space-16);
+              "
+            >
+              A Little Bit About Me
+            </p>
+            <h1
+              style="
+                font-family: 'Fraunces', 'Times New Roman', serif;
+                font-weight: 600;
+                font-size: clamp(2.25rem, 5vw, 3.5rem);
+                line-height: 2.0;
+                color: var(--color-text);
+                max-width: 100%;
+                margin: 0;
+              "
+            >
+              I love Chipotle!
+            </h1>
+          </div>
+          <div class="about-hero__portrait" style="flex-shrink: 0;">
+            <img
+              src="images/smilefinra.jpg"
+              alt="Yu Dian at a FINRA project event"
+              width="320"
+              height="320"
+              style="
+                width: 100%;
+                max-width: 480px;
+                height: auto;
+                aspect-ratio: 1;
+                object-fit: cover;
+                object-position: center 20%;
+                border-radius: 16px;
+                display: block;
+                box-shadow: 0 24px 56px rgba(0, 0, 0, 0.5);
+              "
+            >
+          </div>
+        </div>
+        <div>
+          <a
+            href="#in-short"
+            style="
+              font-family: 'Inter', system-ui, sans-serif;
+              font-size: var(--font-small);
+              font-weight: 400;
+              color: var(--color-text-muted);
+              text-decoration: none;
+              display: inline-flex;
+              align-items: center;
+              gap: 0.35rem;
+            "
+          >
+            <span>Read more</span>
+            <span aria-hidden="true">↓</span>
+          </a>
+        </div>
+      </section>
+    </div>
+
+    <div class="case-study__inner">
+    <!-- Section 2: In short -->
+    <section
+      id="in-short"
+      class="reveal"
+      style="
+        padding: var(--space-96) 0;
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        gap: var(--space-64);
+        flex-wrap: wrap;
+      "
+    >
+      <div style="flex: 0 1 40%; min-width: 260px;">
+        <p
+          style="
+            font-family: 'Inter', system-ui, sans-serif;
+            font-size: 1.25rem;
+            font-weight: 600;
+            color: var(--color-text);
+            margin: 0 0 var(--space-16);
+          "
+        >
+          In short
+        </p>
+        <p
+          style="
+            font-family: 'Inter', system-ui, sans-serif;
+            font-size: 1rem;
+            font-weight: 400;
+            line-height: 1.8;
+            color: var(--color-text);
+            margin: 0;
+          "
+        >
+          Born and raised in New Zealand, I am currently pursuing my BFA in User Experience Design at the Savannah College of Art and Design.
+        </p>
+      </div>
+      <div style="flex: 1 1 50%; min-width: 280px;">
+        <img
+          src="images/inshorteshaylad.png"
+          alt="Yu Dian at a waterfall"
+          style="
+            width: 100%;
+            height: auto;
+            max-height: 380px;
+            object-fit: cover;
+            object-position: center 40%;
+            border-radius: 12px;
+            display: block;
+          "
+        >
+        <p
+          style="
+            font-family: 'Inter', system-ui, sans-serif;
+            font-size: var(--font-small);
+            font-weight: 400;
+            color: var(--color-text-muted);
+            margin: var(--space-12) 0 0;
+            line-height: 1.5;
+          "
+        >
+          Exploring nature
+        </p>
+      </div>
+    </section>
+
+    <!-- Section 3: Why UX? -->
+    <section
+      id="why-ux"
+      class="reveal"
+      style="
+        padding: var(--space-96) 0;
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        gap: var(--space-64);
+        flex-wrap: wrap;
+      "
+    >
+      <div style="flex: 0 1 40%; min-width: 260px;">
+        <p
+          style="
+            font-family: 'Inter', system-ui, sans-serif;
+            font-size: 1.25rem;
+            font-weight: 600;
+            color: var(--color-text);
+            margin: 0 0 var(--space-16);
+          "
+        >
+          Why UX?
+        </p>
+        <p
+          style="
+            font-family: 'Inter', system-ui, sans-serif;
+            font-size: 1rem;
+            font-weight: 400;
+            line-height: 1.8;
+            color: var(--color-text);
+            margin: 0 0 var(--space-16);
+          "
+        >
+        After beginning my studies in law and accounting, I realized my passion was to care more about understanding people and designing solutions that truly help them.
+        </p>
+        <p
+          style="
+            font-family: 'Inter', system-ui, sans-serif;
+            font-size: 1rem;
+            font-weight: 400;
+            line-height: 1.8;
+            color: var(--color-text);
+            margin: 0;
+          "
+        >
+          SCAD's UX Design program was the perfect fit. It allowed me to solve real world problems and get experience in multiple disciplines and mediums. Most importantly, I found an incredible group of talented peers who were just as obsessed with design as I am.
+        </p>
+      </div>
+      <div style="flex: 1 1 50%; min-width: 280px;">
+        <img
+          src="images/why-ux.jpg"
+          alt="Collaborating with teammates at SCAD"
+          style="
+            width: 100%;
+            height: auto;
+            max-height: 520px;
+            object-fit: cover;
+            object-position: center;
+            border-radius: 12px;
+            display: block;
+          "
+        >
+        <p
+          style="
+            font-family: 'Inter', system-ui, sans-serif;
+            font-size: var(--font-small);
+            font-weight: 400;
+            color: var(--color-text-muted);
+            margin: var(--space-12) 0 0;
+            line-height: 1.5;
+          "
+        >
+          Collaborating with teammates at SCAD
+        </p>
+      </div>
+    </section>
+
+    <!-- Section 4: Life at SCAD -->
+    <section
+      id="life-at-scad"
+      class="reveal"
+      style="
+        padding: var(--space-96) 0;
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        gap: var(--space-64);
+        flex-wrap: wrap;
+        overflow: visible;
+      "
+    >
+      <div style="flex: 0 1 40%; min-width: 260px;">
+        <p
+          style="
+            font-family: 'Inter', system-ui, sans-serif;
+            font-size: 1.25rem;
+            font-weight: 600;
+            color: var(--color-text);
+            margin: 0 0 var(--space-16);
+          "
+        >
+          Life at SCAD
+        </p>
+        <p
+          style="
+            font-family: 'Inter', system-ui, sans-serif;
+            font-size: 1rem;
+            font-weight: 400;
+            line-height: 1.8;
+            color: var(--color-text);
+            margin: 0 0 var(--space-16);
+          "
+        >
+          Design challenges, insightful events, and being a student-athlete. Every facet of SCAD has benefitted me as a designer, community leader, and person.
+        </p>
+        <p
+          style="
+            font-family: 'Inter', system-ui, sans-serif;
+            font-size: 1rem;
+            font-weight: 400;
+            line-height: 1.8;
+            color: var(--color-text);
+            margin: 0;
+          "
+        >
+          Outside of design, I've been a musician for most of my life. I grew up playing piano and violin, and picked up guitar during COVID. When I can, I love trying new food spots and exploring nature.
+        </p>
+      </div>
+      <div style="flex: 1 1 50%; min-width: 280px; overflow: visible;">
+        <div id="bounce-cards-container" style="position: relative; width: 680px; height: 380px; margin-left: -60px; display: flex; justify-content: center; align-items: center; flex-shrink: 0;">
+          <div class="bounce-card card-0" data-index="0"><img src="images/bounccard1.jpg" alt="SCAD tennis card 1" /></div>
+          <div class="bounce-card card-1" data-index="1"><img src="images/Bouncecard3.jpg" alt="SCAD tennis card 3" /></div>
+          <div class="bounce-card card-2" data-index="2"><img src="images/bouncecard4.JPG" alt="SCAD tennis card 4" /></div>
+          <div class="bounce-card card-3" data-index="3"><img src="images/Bouncecard2.JPG" alt="SCAD tennis card 2" /></div>
+          <div class="bounce-card card-4" data-index="4"><img src="images/bouncecard5.jpg" alt="SCAD tennis card 5" /></div>
+        </div>
+        <p
+          style="
+            font-family: 'Inter', system-ui, sans-serif;
+            font-size: var(--font-small);
+            font-weight: 400;
+            color: var(--color-text-muted);
+            margin: var(--space-12) 0 0;
+            line-height: 1.5;
+          "
+        >
+          SCAD Men's Tennis Team
+          
+        </p>
+      </div>
+    </section>
+
+      <!-- Section 5: Experiences -->
+      <section
+        id="experiences"
+        class="reveal"
+        style="padding: var(--space-64) 0;"
+      >
+        <div
+          style="
+            display: flex;
+            flex-wrap: wrap;
+            gap: var(--space-48);
+            align-items: flex-start;
+          "
+        >
+          <div
+            style="
+              flex: 0 1 40%;
+              min-width: 240px;
+            "
+          >
+            <h2
+              style="
+                font-family: 'Fraunces', 'Times New Roman', serif;
+                font-weight: 600;
+                font-size: clamp(2.2rem, 4vw, 3rem);
+                color: var(--color-text);
+                margin: 0;
+              "
+            >
+              Experiences
+            </h2>
+          </div>
+
+          <div
+            style="
+              flex: 1 1 260px;
+            "
+          >
+            <!-- FINRA -->
+            <div style="padding: var(--space-16) 0;">
+              <div
+                style="
+                  display: flex;
+                  justify-content: space-between;
+                  align-items: baseline;
+                  gap: var(--space-16);
+                "
+              >
+                <div>
+                  <p
+                    style="
+                      font-family: 'Inter', system-ui, sans-serif;
+                      font-size: 1rem;
+                      font-weight: 600;
+                      color: var(--color-text);
+                      margin: 0 0 4px;
+                    "
+                  >
+                    FINRA - Contract
+                  </p>
+                  <p
+                    style="
+                      font-family: 'Inter', system-ui, sans-serif;
+                      font-size: var(--font-small);
+                      font-weight: 400;
+                      color: var(--color-text-muted);
+                      margin: 0;
+                    "
+                  >
+                    UX Designer
+                  </p>
+                </div>
+                <p
+                  style="
+                    font-family: 'Inter', system-ui, sans-serif;
+                    font-size: var(--font-small);
+                    font-weight: 400;
+                    color: var(--color-text-muted);
+                    margin: 0;
+                    white-space: nowrap;
+                  "
+                >
+                  Winter 2026
+                </p>
+              </div>
+            </div>
+
+            <!-- Deloitte -->
+            <div style="padding: var(--space-16) 0;">
+              <hr
+                style="
+                  border: 0;
+                  border-top: 1px solid rgba(255, 255, 255, 0.08);
+                  margin: 0 0 var(--space-16);
+                "
+              >
+              <div
+                style="
+                  display: flex;
+                  justify-content: space-between;
+                  align-items: baseline;
+                  gap: var(--space-16);
+                "
+              >
+                <div>
+                  <p
+                    style="
+                      font-family: 'Inter', system-ui, sans-serif;
+                      font-size: 1rem;
+                      font-weight: 600;
+                      color: var(--color-text);
+                      margin: 0 0 4px;
+                    "
+                  >
+                    Deloitte - Contract
+                  </p>
+                  <p
+                    style="
+                      font-family: 'Inter', system-ui, sans-serif;
+                      font-size: var(--font-small);
+                      font-weight: 400;
+                      color: var(--color-text-muted);
+                      margin: 0;
+                    "
+                  >
+                    UX Researcher
+                  </p>
+                </div>
+                <p
+                  style="
+                    font-family: 'Inter', system-ui, sans-serif;
+                    font-size: var(--font-small);
+                    font-weight: 400;
+                    color: var(--color-text-muted);
+                    margin: 0;
+                    white-space: nowrap;
+                  "
+                >
+                  Spring 2025
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section 6: Education -->
+      <section
+        id="education"
+        class="reveal"
+        style="padding: var(--space-64) 0;"
+      >
+        <div
+          style="
+            display: flex;
+            flex-wrap: wrap;
+            gap: var(--space-48);
+            align-items: flex-start;
+          "
+        >
+          <div
+            style="
+              flex: 0 1 40%;
+              min-width: 240px;
+            "
+          >
+            <h2
+              style="
+                font-family: 'Fraunces', 'Times New Roman', serif;
+                font-weight: 600;
+                font-size: clamp(2.2rem, 4vw, 3rem);
+                color: var(--color-text);
+                margin: 0;
+              "
+            >
+              Education
+            </h2>
+          </div>
+
+          <div
+            style="
+              flex: 1 1 260px;
+            "
+          >
+            <div style="padding: var(--space-16) 0;">
+              <div
+                style="
+                  display: flex;
+                  justify-content: space-between;
+                  align-items: baseline;
+                  gap: var(--space-16);
+                "
+              >
+                <div>
+                  <p
+                    style="
+                      font-family: 'Inter', system-ui, sans-serif;
+                      font-size: 1rem;
+                      font-weight: 600;
+                      color: var(--color-text);
+                      margin: 0 0 4px;
+                    "
+                  >
+                    Savannah College of Art and Design
+                  </p>
+                  <p
+                    style="
+                      font-family: 'Inter', system-ui, sans-serif;
+                      font-size: var(--font-small);
+                      font-weight: 400;
+                      color: var(--color-text-muted);
+                      margin: 0;
+                    "
+                  >
+                    BFA User Experience Design
+                  </p>
+                </div>
+                <p
+                  style="
+                    font-family: 'Inter', system-ui, sans-serif;
+                    font-size: var(--font-small);
+                    font-weight: 400;
+                    color: var(--color-text-muted);
+                    margin: 0;
+                    white-space: nowrap;
+                  "
+                >
+                  2024 - 2027
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <footer class="contact-footer">
+    <div class="contact-footer__inner">
+      <div class="contact-footer__left">
+        <a href="index.html" class="contact-footer__monogram">YD</a>
+        <p class="contact-footer__tagline">
+          More projects and experiences are always on the way. Let's keep in touch!
+        </p>
+        <p class="contact-footer__copyright">© 2026 Yu Dian Dong. All Rights Reserved.</p>
+      </div>
+
+      <div class="contact-footer__right">
+        <div class="contact-footer__col">
+          <h3>Connect</h3>
+          <ul class="contact-footer__links">
+            <li>
+              <button type="button" id="copy-email" class="contact-footer__copy-btn">Copy Email</button>
+            </li>
+            <li>
+              <a href="https://www.linkedin.com/in/yu-dian-dong/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+            </li>
+            <li>
+              <a href="https://www.instagram.com/yudian.dong/" target="_blank" rel="noopener noreferrer">Instagram</a>
+            </li>
+          </ul>
+        </div>
+        <div class="contact-footer__col">
+          <h3>About</h3>
+          <ul class="contact-footer__links">
+            <li><a href="about.html">About Me</a></li>
+            <li>
+              <a href="https://drive.google.com/file/d/1mg6feJMw2vVv7QX_KPrRZFSz7zgdr4P-/view?usp=sharing" target="_blank" rel="noopener noreferrer">Resume</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script>
+    (function() {
+      var cards = document.querySelectorAll('.bounce-card');
+      var container = document.getElementById('bounce-cards-container');
+      if (!cards.length || !container || typeof gsap === 'undefined') return;
+
+      var DURATION = 0.55;
+      var EASE = 'power2.out';
+
+      // Rest (stacked) – first card always prominent
+      var restSlots = [
+        { x: 0, y: 0, r: 0 },
+        { x: 70, y: 14, r: 2 },
+        { x: 140, y: 28, r: 3 },
+        { x: -70, y: -14, r: -2 },
+        { x: -140, y: -28, r: -3 }
+      ];
+      var restZ = [10, 4, 3, 2, 1];
+
+      // Fanned (hover) state – spread left to right
+      var fannedTransforms = [
+        'rotate(4deg) translate(-140px, -28px)',
+        'rotate(-2deg) translate(-70px, -14px)',
+        'rotate(2deg) translate(0, 0)',
+        'rotate(-3deg) translate(70px, 14px)',
+        'rotate(4deg) translate(140px, 28px)'
+      ];
+
+      var isHovering = false;
+
+      function getRestTransform(cardIndex, active) {
+        var slot = (cardIndex - active + 5) % 5;
+        var s = restSlots[slot];
+        return 'rotate(' + s.r + 'deg) translate(' + s.x + 'px, ' + s.y + 'px)';
+      }
+
+      function getRestZIndex(cardIndex, active) {
+        var slot = (cardIndex - active + 5) % 5;
+        return restZ[slot];
+      }
+
+      function applyRestState() {
+        for (var i = 0; i < cards.length; i++) {
+          gsap.killTweensOf(cards[i]);
+          gsap.set(cards[i], {
+            zIndex: getRestZIndex(i, 0)
+          });
+          gsap.to(cards[i], {
+            transform: getRestTransform(i, 0),
+            scale: 1,
+            duration: DURATION,
+            ease: EASE,
+            overwrite: true,
+            force3D: true
+          });
+        }
+      }
+
+      function applyFannedState(hoveredCardIndex) {
+        hoveredCardIndex = hoveredCardIndex == null ? -1 : hoveredCardIndex;
+        for (var i = 0; i < cards.length; i++) {
+          gsap.killTweensOf(cards[i]);
+          gsap.set(cards[i], { zIndex: (hoveredCardIndex === i) ? 10 : 9 - i });
+          var scale = (hoveredCardIndex === i) ? 1.06 : 1;
+          gsap.to(cards[i], {
+            transform: fannedTransforms[i],
+            scale: scale,
+            duration: DURATION,
+            ease: EASE,
+            overwrite: true,
+            force3D: true
+          });
+        }
+      }
+
+      // Set initial stacked state (first card prominent), then entrance
+      for (var i = 0; i < cards.length; i++) {
+        gsap.set(cards[i], {
+          transform: getRestTransform(i, 0),
+          zIndex: getRestZIndex(i, 0)
+        });
+      }
+      gsap.fromTo(cards, { scale: 0 }, {
+        scale: 1,
+        stagger: 0.08,
+        ease: 'elastic.out(1, 0.5)',
+        delay: 0.8,
+        overwrite: false,
+        force3D: true
+      });
+
+      container.addEventListener('mouseenter', function() {
+        isHovering = true;
+        applyFannedState(-1);
+      });
+
+      container.addEventListener('mouseleave', function() {
+        isHovering = false;
+        applyRestState();
+      });
+
+      for (var i = 0; i < cards.length; i++) {
+        (function(idx) {
+          cards[idx].addEventListener('mouseenter', function() {
+            if (isHovering) applyFannedState(idx);
+          });
+          cards[idx].addEventListener('mouseleave', function() {
+            if (isHovering) applyFannedState(-1);
+          });
+        })(i);
+      }
+    })();
+  </script>
+  <script src="js/main.js"></script>
+</body>
+</html>

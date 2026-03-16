@@ -797,11 +797,6 @@ body.nav-open {
   font-size: 0.85rem;
   font-weight: 400;
   color: var(--color-text);
-  font-style: italic;
-}
-
-.case-card:nth-child(1) .case-card__time,
-.case-card:nth-child(2) .case-card__time {
   font-style: normal;
 }
 

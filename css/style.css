@@ -2195,6 +2195,14 @@ body.case-study-page {
   display: block;
 }
 
+/* About hero CTA polish */
+.about-hero__cta:hover,
+.about-hero__cta:focus-visible {
+  transform: translateY(-2px);
+  background: rgba(0, 127, 255, 0.22);
+  border-color: #1f93ff;
+}
+
 /* --------------------------------------------------------------
    CHAT WIDGET (homepage only)
    -------------------------------------------------------------- */

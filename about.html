@@ -347,11 +347,18 @@
       </div>
       <div style="flex: 1 1 50%; min-width: 280px; overflow: visible;">
         <div id="bounce-cards-container" style="position: relative; width: 680px; height: 380px; margin-left: -60px; display: flex; justify-content: center; align-items: center; flex-shrink: 0;">
-          <div class="bounce-card card-0" data-index="0"><img src="images/bounccard1.jpg" alt="SCAD tennis card 1" /></div>
-          <div class="bounce-card card-1" data-index="1"><img src="images/Bouncecard3.jpg" alt="SCAD tennis card 3" /></div>
-          <div class="bounce-card card-2" data-index="2"><img src="images/bouncecard4.JPG" alt="SCAD tennis card 4" /></div>
-          <div class="bounce-card card-3" data-index="3"><img src="images/Bouncecard2.JPG" alt="SCAD tennis card 2" /></div>
-          <div class="bounce-card card-4" data-index="4"><img src="images/bouncecard5.jpg" alt="SCAD tennis card 5" /></div>
+          <div class="bounce-card card-0" data-index="0" role="button" tabindex="0" aria-label="Open tennis photo 1 in full screen"><img src="images/bounccard1.jpg" alt="SCAD tennis card 1" /></div>
+          <div class="bounce-card card-1" data-index="1" role="button" tabindex="0" aria-label="Open tennis photo 2 in full screen"><img src="images/Bouncecard3.jpg" alt="SCAD tennis card 3" /></div>
+          <div
+            class="bounce-card card-2"
+            data-index="2"
+            role="button"
+            tabindex="0"
+            aria-label="Open tennis photo 3 in full screen"
+            data-lightbox-crop-src-px="28"
+          ><img src="images/bouncecard4.JPG" alt="SCAD tennis card 4" /></div>
+          <div class="bounce-card card-3" data-index="3" role="button" tabindex="0" aria-label="Open tennis photo 4 in full screen"><img src="images/Bouncecard2.JPG" alt="SCAD tennis card 2" /></div>
+          <div class="bounce-card card-4" data-index="4" role="button" tabindex="0" aria-label="Open tennis photo 5 in full screen"><img src="images/bouncecard5.jpg" alt="SCAD tennis card 5" /></div>
         </div>
         <p
           style="
@@ -643,6 +650,33 @@
       </div>
     </div>
   </footer>
+
+  <div
+    id="tennis-lightbox"
+    class="tennis-lightbox"
+    role="dialog"
+    aria-modal="true"
+    aria-label="Tennis team photo gallery"
+    aria-hidden="true"
+  >
+    <div class="tennis-lightbox__backdrop" data-lightbox-close tabindex="-1"></div>
+    <button type="button" class="tennis-lightbox__close" id="tennis-lightbox-close" aria-label="Close gallery">
+      <span aria-hidden="true">&times;</span>
+    </button>
+    <button type="button" class="tennis-lightbox__nav tennis-lightbox__nav--prev" id="tennis-lightbox-prev" aria-label="Previous photo">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <path d="M15 6L9 12L15 18" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+    </button>
+    <button type="button" class="tennis-lightbox__nav tennis-lightbox__nav--next" id="tennis-lightbox-next" aria-label="Next photo">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <path d="M9 6L15 12L9 18" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+    </button>
+    <div class="tennis-lightbox__stage">
+      <img id="tennis-lightbox-img" src="" alt="" class="tennis-lightbox__img" decoding="async" />
+    </div>
+  </div>
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
   <script>

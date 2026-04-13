@@ -2193,6 +2193,149 @@ body.case-study-page {
   height: 100%;
   object-fit: cover;
   display: block;
+  pointer-events: none;
+}
+
+/* About page: tennis gallery lightbox */
+.tennis-lightbox {
+  position: fixed;
+  inset: 0;
+  z-index: 300;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: clamp(1.25rem, 5vmin, 3.5rem);
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transition: opacity 0.28s ease, visibility 0.28s ease;
+}
+
+.tennis-lightbox.is-open {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
+
+.tennis-lightbox__backdrop {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.88);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  cursor: pointer;
+}
+
+.tennis-lightbox__stage {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  max-width: min(92vw, 1280px);
+  max-height: min(88vh, 900px);
+  padding: clamp(0.5rem, 3vmin, 2rem);
+  box-sizing: border-box;
+  pointer-events: none;
+}
+
+.tennis-lightbox__img {
+  max-width: 100%;
+  max-height: min(82vh, 860px);
+  width: auto;
+  height: auto;
+  object-fit: contain;
+  border-radius: 14px;
+  box-shadow: 0 24px 64px rgba(0, 0, 0, 0.55);
+  pointer-events: none;
+  user-select: none;
+}
+
+.tennis-lightbox__close {
+  position: absolute;
+  top: clamp(0.75rem, 2.5vmin, 1.25rem);
+  right: clamp(0.75rem, 2.5vmin, 1.25rem);
+  z-index: 3;
+  width: 44px;
+  height: 44px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.06);
+  color: rgba(255, 255, 255, 0.85);
+  font-size: 1.75rem;
+  line-height: 1;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.2s ease, border-color 0.2s ease, color 0.2s ease;
+}
+
+.tennis-lightbox__close:hover,
+.tennis-lightbox__close:focus-visible {
+  background: rgba(0, 127, 255, 0.2);
+  border-color: rgba(0, 127, 255, 0.55);
+  color: #fff;
+  outline: none;
+}
+
+.tennis-lightbox__nav {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 2;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  background: rgba(255, 255, 255, 0.06);
+  color: rgba(255, 255, 255, 0.9);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.2s ease, border-color 0.2s ease, transform 0.2s ease, color 0.2s ease;
+}
+
+.tennis-lightbox__nav:hover,
+.tennis-lightbox__nav:focus-visible {
+  background: rgba(0, 127, 255, 0.22);
+  border-color: rgba(0, 127, 255, 0.5);
+  color: #fff;
+  outline: none;
+}
+
+.tennis-lightbox__nav--prev {
+  left: clamp(0.5rem, 3vw, 1.5rem);
+}
+
+.tennis-lightbox__nav--next {
+  right: clamp(0.5rem, 3vw, 1.5rem);
+}
+
+.tennis-lightbox__nav:active {
+  transform: translateY(-50%) scale(0.96);
+}
+
+@media (max-width: 640px) {
+  .tennis-lightbox__nav {
+    width: 42px;
+    height: 42px;
+  }
+
+  .tennis-lightbox__nav--prev {
+    left: 0.35rem;
+  }
+
+  .tennis-lightbox__nav--next {
+    right: 0.35rem;
+  }
+}
+
+body.tennis-lightbox-open {
+  overflow: hidden;
 }
 
 /* About hero CTA polish */

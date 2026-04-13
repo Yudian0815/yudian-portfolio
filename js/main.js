@@ -207,4 +207,148 @@
     });
   }
 
+  /* Tennis photo lightbox (about page) */
+  var tennisLightbox = document.getElementById('tennis-lightbox');
+  var tennisLightboxImg = document.getElementById('tennis-lightbox-img');
+  var tennisLightboxClose = document.getElementById('tennis-lightbox-close');
+  var tennisLightboxPrev = document.getElementById('tennis-lightbox-prev');
+  var tennisLightboxNext = document.getElementById('tennis-lightbox-next');
+  var bounceCardsContainer = document.getElementById('bounce-cards-container');
+
+  if (
+    tennisLightbox &&
+    tennisLightboxImg &&
+    tennisLightboxClose &&
+    tennisLightboxPrev &&
+    tennisLightboxNext &&
+    bounceCardsContainer
+  ) {
+    var tennisSlides = [];
+    bounceCardsContainer.querySelectorAll('.bounce-card').forEach(function (card) {
+      var img = card.querySelector('img');
+      if (!img) return;
+      var cropPx = card.getAttribute('data-lightbox-crop-src-px');
+      tennisSlides.push({
+        src: img.getAttribute('src'),
+        alt: img.getAttribute('alt') || '',
+        cropSrcPx: cropPx ? parseFloat(cropPx, 10) : 0
+      });
+    });
+
+    var tennisIndex = 0;
+    var tennisFocusBefore = null;
+
+    function clearTennisLightboxCrop() {
+      tennisLightboxImg.style.clipPath = '';
+      tennisLightboxImg.style.webkitClipPath = '';
+    }
+
+    function applyTennisLightboxCrop() {
+      clearTennisLightboxCrop();
+      var s = tennisSlides[tennisIndex];
+      if (!s || !s.cropSrcPx || s.cropSrcPx <= 0) return;
+
+      function setClipFromNatural() {
+        var h = tennisLightboxImg.naturalHeight;
+        if (!h) return;
+        var pct = (s.cropSrcPx / h) * 100;
+        var v = 'inset(' + pct + '% 0 0 0)';
+        tennisLightboxImg.style.clipPath = v;
+        tennisLightboxImg.style.webkitClipPath = v;
+      }
+
+      if (tennisLightboxImg.complete && tennisLightboxImg.naturalHeight) {
+        setClipFromNatural();
+      } else {
+        tennisLightboxImg.onload = function () {
+          tennisLightboxImg.onload = null;
+          setClipFromNatural();
+        };
+      }
+    }
+
+    function showTennisSlide(i) {
+      if (!tennisSlides.length) return;
+      tennisIndex = (i + tennisSlides.length) % tennisSlides.length;
+      var s = tennisSlides[tennisIndex];
+      clearTennisLightboxCrop();
+      tennisLightboxImg.setAttribute('src', s.src);
+      tennisLightboxImg.setAttribute('alt', s.alt);
+      applyTennisLightboxCrop();
+    }
+
+    function openTennisLightbox(startIndex) {
+      if (!tennisSlides.length) return;
+      tennisFocusBefore = document.activeElement;
+      showTennisSlide(startIndex);
+      tennisLightbox.classList.add('is-open');
+      tennisLightbox.setAttribute('aria-hidden', 'false');
+      document.body.classList.add('tennis-lightbox-open');
+      tennisLightboxClose.focus();
+    }
+
+    function closeTennisLightbox() {
+      tennisLightbox.classList.remove('is-open');
+      tennisLightbox.setAttribute('aria-hidden', 'true');
+      document.body.classList.remove('tennis-lightbox-open');
+      tennisLightboxImg.onload = null;
+      clearTennisLightboxCrop();
+      tennisLightboxImg.removeAttribute('src');
+      if (tennisFocusBefore && typeof tennisFocusBefore.focus === 'function') {
+        tennisFocusBefore.focus();
+      }
+      tennisFocusBefore = null;
+    }
+
+    bounceCardsContainer.querySelectorAll('.bounce-card').forEach(function (card) {
+      card.addEventListener('click', function (e) {
+        e.preventDefault();
+        var idx = parseInt(card.getAttribute('data-index'), 10);
+        if (isNaN(idx)) idx = 0;
+        openTennisLightbox(idx);
+      });
+      card.addEventListener('keydown', function (e) {
+        if (e.key !== 'Enter' && e.key !== ' ') return;
+        e.preventDefault();
+        var idx = parseInt(card.getAttribute('data-index'), 10);
+        if (isNaN(idx)) idx = 0;
+        openTennisLightbox(idx);
+      });
+    });
+
+    tennisLightboxClose.addEventListener('click', closeTennisLightbox);
+    tennisLightbox.querySelectorAll('[data-lightbox-close]').forEach(function (el) {
+      el.addEventListener('click', closeTennisLightbox);
+    });
+    tennisLightboxPrev.addEventListener('click', function (e) {
+      e.stopPropagation();
+      showTennisSlide(tennisIndex - 1);
+    });
+    tennisLightboxNext.addEventListener('click', function (e) {
+      e.stopPropagation();
+      showTennisSlide(tennisIndex + 1);
+    });
+
+    document.addEventListener(
+      'keydown',
+      function (e) {
+        if (!tennisLightbox.classList.contains('is-open')) return;
+        if (e.key === 'Escape') {
+          e.preventDefault();
+          closeTennisLightbox();
+          return;
+        }
+        if (e.key === 'ArrowLeft') {
+          e.preventDefault();
+          showTennisSlide(tennisIndex - 1);
+        }
+        if (e.key === 'ArrowRight') {
+          e.preventDefault();
+          showTennisSlide(tennisIndex + 1);
+        }
+      },
+      true
+    );
+  }
+
 })();

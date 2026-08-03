@@ -77,145 +77,43 @@
 
   <main class="case-study">
     <div class="case-study__inner">
-      <!-- Section 1: Hero -->
-      <section
-        id="about-hero"
-        class="reveal"
-        style="
-          min-height: 100vh;
-          display: flex;
-          flex-direction: column;
-          justify-content: space-between;
-          padding: var(--space-64) 0 var(--space-48);
-        "
-      >
-        <div style="margin-top: var(--space-48);"></div>
-        <div class="about-hero__content" style="display: flex; flex-wrap: nowrap; align-items: flex-end; gap: var(--space-40); justify-content: space-between;">
-          <div style="flex: 1 1 auto; min-width: 0;">
-            <p
-              class="about-hero__title"
-              style="
-                font-family: 'Inter', system-ui, sans-serif;
-                font-size: clamp(1.35rem, 3.2vw, 2.2rem);
-                font-weight: 600;
-                letter-spacing: 0.14em;
-                text-transform: uppercase;
-                color: white;
-                margin: 0 0 var(--space-24);
-                line-height: 1.15;
-              "
-            >
-              A little Bit About Me
-            </p>
-            <a
-              href="#in-short"
-              style="
-                font-family: 'Inter', system-ui, sans-serif;
-                font-size: var(--font-small);
-                font-weight: 400;
-                color: var(--color-text-muted);
-                text-decoration: none;
-                display: inline-flex;
-                align-items: center;
-                gap: 0.35rem;
-              "
-            >
-              <span>Read more</span>
-              <span aria-hidden="true">↓</span>
-            </a>
-          </div>
-          <div class="about-hero__portrait" style="flex: 0 0 auto; margin-left: auto;">
-            <img
-              src="images/hero-portrait.jpg"
-              alt="Yu Dian Dong portrait"
-              width="320"
-              height="320"
-              style="
-                width: 100%;
-                max-width: 380px;
-                height: auto;
-                aspect-ratio: 4 / 5;
-                object-fit: cover;
-                object-position: center 12%;
-                border-radius: 16px;
-                display: block;
-                box-shadow: 0 24px 56px rgba(0, 0, 0, 0.5);
-              "
-            >
-          </div>
-        </div>
-      </section>
-    </div>
+    <!-- Section 0: About hero -->
+    <section class="about-hero" aria-labelledby="about-hero-heading">
+      <h1 id="about-hero-heading" class="about-hero__title">
+        <span class="about-hero__line">Law and Accounting, No Thanks.</span>
+        <span class="about-hero__line">User Experience Design, <em class="about-hero__em">Yes Please.</em></span>
+      </h1>
+      <a href="#in-short" class="about-view-more about-view-more--left" aria-label="View more about me">
+        <span>View more</span>
+        <span class="about-view-more__arrow" aria-hidden="true">↓</span>
+      </a>
+    </section>
 
-    <div class="case-study__inner">
-    <!-- Section 2: In short -->
+    <!-- Section 1: In short -->
     <section
       id="in-short"
-      class="reveal"
-      style="
-        padding: var(--space-96) 0;
-        display: flex;
-        flex-direction: row;
-        align-items: flex-start;
-        gap: var(--space-64);
-        flex-wrap: wrap;
-      "
+      class="about-landing reveal"
     >
-      <div style="flex: 0 1 40%; min-width: 260px;">
-        <p
-          style="
-            font-family: 'Inter', system-ui, sans-serif;
-            font-size: 1.25rem;
-            font-weight: 600;
-            color: var(--color-text);
-            margin: 0 0 var(--space-16);
-          "
-        >
-          In short
-        </p>
-        <p
-          style="
-            font-family: 'Inter', system-ui, sans-serif;
-            font-size: 1rem;
-            font-weight: 400;
-            line-height: 1.8;
-            color: var(--color-text);
-            margin: 0;
-          "
-        >
-          Born and raised in New Zealand, I am currently pursuing my BFA in User Experience Design at the Savannah College of Art and Design.
-        </p>
-      </div>
-      <div style="flex: 1 1 50%; min-width: 280px;">
-        <img
-          src="images/inshorteshaylad.png"
-          alt="Yu Dian at a waterfall"
-          style="
-            width: 100%;
-            height: auto;
-            max-height: 380px;
-            object-fit: cover;
-            object-position: center 40%;
-            border-radius: 12px;
-            display: block;
-          "
-        >
-        <p
-          style="
-            font-family: 'Inter', system-ui, sans-serif;
-            font-size: var(--font-small);
-            font-weight: 400;
-            color: var(--color-text-muted);
-            margin: var(--space-12) 0 0;
-            line-height: 1.5;
-          "
-        >
-          Exploring nature
-        </p>
+      <div class="about-landing__row">
+        <div class="about-landing__copy">
+          <p class="about-landing__heading">In short</p>
+          <p class="about-landing__body">
+            Born and raised in New Zealand, I am currently pursuing my BFA in User Experience Design at the Savannah College of Art and Design.
+          </p>
+        </div>
+        <div class="about-landing__media">
+          <img
+            src="images/inshorteshaylad.png"
+            alt="Yu Dian at a waterfall"
+            width="800"
+            height="500"
+          >
+          <p class="about-landing__caption">Exploring nature</p>
+        </div>
       </div>
     </section>
 
-    <!-- Section 3: Why UX? -->
+    <!-- Section 2: Why UX? -->
     <section
       id="why-ux"
       class="reveal"
@@ -347,7 +245,15 @@
       </div>
       <div style="flex: 1 1 50%; min-width: 280px; overflow: visible;">
         <div id="bounce-cards-container" style="position: relative; width: 680px; height: 380px; margin-left: -60px; display: flex; justify-content: center; align-items: center; flex-shrink: 0;">
-          <div class="bounce-card card-0" data-index="0" role="button" tabindex="0" aria-label="Open tennis photo 1 in full screen"><img src="images/bounccard1.jpg" alt="SCAD tennis card 1" /></div>
+          <div class="bounce-card card-0" data-index="0" role="button" tabindex="0" aria-label="Open tennis photo 1 in full screen">
+            <img src="images/bounccard1.jpg" alt="SCAD tennis card 1" />
+            <span class="bounce-card__expand" aria-hidden="true">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M14 4h6v6M10 20H4v-6M20 4l-7 7M4 20l7-7" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+              Expand
+            </span>
+          </div>
           <div class="bounce-card card-1" data-index="1" role="button" tabindex="0" aria-label="Open tennis photo 2 in full screen"><img src="images/Bouncecard3.jpg" alt="SCAD tennis card 3" /></div>
           <div
             class="bounce-card card-2"
@@ -660,8 +566,8 @@
     aria-hidden="true"
   >
     <div class="tennis-lightbox__backdrop" data-lightbox-close tabindex="-1"></div>
-    <button type="button" class="tennis-lightbox__close" id="tennis-lightbox-close" aria-label="Close gallery">
-      <span aria-hidden="true">&times;</span>
+    <button type="button" class="tennis-lightbox__close" id="tennis-lightbox-close" data-lightbox-close aria-label="Tap to close">
+      Tap to close
     </button>
     <button type="button" class="tennis-lightbox__nav tennis-lightbox__nav--prev" id="tennis-lightbox-prev" aria-label="Previous photo">
       <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">

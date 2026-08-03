@@ -1,0 +1,710 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Slack Redesign &mdash; Yu Dian Dong</title>
+  <meta name="description" content="End-to-end UX research and validation for Slack. Identified key friction points and confirmed redesigns fixed both severity-4 issues.">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="case-study-page case-study-slack">
+  <header class="site-header">
+    <nav class="site-nav" aria-label="Primary navigation">
+      <div class="site-nav__inner">
+        <a href="index.html" class="site-nav__brand">
+          <span class="site-nav__avatar-wrap">
+            <img
+              src="images/hero-portrait.jpg"
+              alt=""
+              class="site-nav__avatar"
+              width="40"
+              height="40"
+            >
+            <span class="site-nav__pulse" aria-hidden="true"></span>
+          </span>
+          <span class="site-nav__brand-text">
+            <span class="site-nav__brand-name">Yu Dian Dong</span>
+            <span class="site-nav__brand-status">Open for work</span>
+          </span>
+        </a>
+
+        <div class="site-nav__links">
+          <a href="index.html" class="site-nav__link">Home</a>
+          <a href="index.html#work" class="site-nav__link">Work</a>
+          <a href="about.html" class="site-nav__link">About</a>
+        </div>
+
+        <div class="site-nav__actions">
+          <a
+            href="https://drive.google.com/file/d/1kiobH4x5Cl2rX7z3iEvS0YN4FEhfI2Ea/view?usp=sharing"
+            class="site-nav__resume"
+            target="_blank"
+            rel="noopener noreferrer"
+          >Resume<span class="site-nav__resume-arrow"> ↗</span></a>
+        </div>
+
+        <button class="site-nav__toggle" type="button" aria-label="Toggle navigation" aria-expanded="false">
+          <span class="site-nav__toggle-line"></span>
+          <span class="site-nav__toggle-line"></span>
+          <span class="site-nav__toggle-line"></span>
+        </button>
+      </div>
+    </nav>
+
+    <div class="site-nav__overlay" aria-hidden="true">
+      <nav class="site-nav__overlay-menu" aria-label="Mobile navigation">
+        <a href="index.html" class="site-nav__overlay-link" data-nav-link>Home</a>
+        <a href="index.html#work" class="site-nav__overlay-link" data-nav-link>Work</a>
+        <a href="about.html" class="site-nav__overlay-link" data-nav-link>About</a>
+        <a
+          href="https://drive.google.com/file/d/1kiobH4x5Cl2rX7z3iEvS0YN4FEhfI2Ea/view?usp=sharing"
+          class="site-nav__overlay-link"
+          target="_blank"
+          rel="noopener noreferrer"
+          data-nav-link
+        >Resume</a>
+      </nav>
+    </div>
+  </header>
+
+  <div class="page-progress" aria-hidden="true">
+    <div class="page-progress__inner">
+      <div class="page-progress__track">
+        <div class="page-progress__bar"></div>
+      </div>
+    </div>
+  </div>
+
+  <main class="case-study">
+    <div class="case-study__inner">
+      <!-- Hero image (full width, first after nav) -->
+      <div class="case-study__hero-img">
+        <img src="images/Slackthumbanil.png" alt="Slack Redesign, product overview" width="1200" height="auto">
+      </div>
+
+      <!-- Section 1: Overview -->
+      <section id="overview" class="case-study__section">
+        <p class="case-study__eyebrow case-study-slack__eyebrow">Slack · UX Research · 2026</p>
+        <h1 class="case-study__hero-title">
+          Studying what happens when work, messages, and 67 unread notifications collide.
+        </h1>
+
+        <div class="case-study__meta-grid reveal">
+          <div class="case-study__meta-cell">
+            <span class="case-study__meta-label">ROLE</span>
+            <span class="case-study__meta-value">UX Researcher</span>
+          </div>
+          <div class="case-study__meta-cell">
+            <span class="case-study__meta-label">TEAM</span>
+            <span class="case-study__meta-value">Yu Dian, Brayden, Bess, Finley</span>
+          </div>
+          <div class="case-study__meta-cell">
+            <span class="case-study__meta-label">DURATION</span>
+            <span class="case-study__meta-value">10 Weeks</span>
+          </div>
+          <div class="case-study__meta-cell">
+            <span class="case-study__meta-label">YEAR</span>
+            <span class="case-study__meta-value">2026</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section 2: The Project -->
+      <section id="the-project" class="case-study__section slack-project">
+        <p class="slack-project__eyebrow reveal">— The Project</p>
+        <h2 class="slack-project__title reveal">Making workplace communication<br>easier to understand.</h2>
+
+        <div class="slack-project__grid reveal">
+          <div class="slack-project__main">
+            <p class="slack-project__body">
+              Slack is one of the most widely used workplace communication tools, but many of its most important features are hidden behind unclear terminology, fragmented navigation, and invisible system states. This project evaluated Slack through heuristic analysis, moderated usability testing, redesign, and validation testing to uncover where users struggle and how targeted design changes could improve task success.
+            </p>
+            <ul class="slack-project__pills" aria-label="Project methods">
+              <li>Heuristic Evaluation</li>
+              <li>Moderated Testing</li>
+              <li>Unmoderated Testing</li>
+              <li>Interaction Design</li>
+              <li>UX Research</li>
+            </ul>
+          </div>
+
+          <aside class="slack-project__role">
+            <p class="slack-project__role-label">My Role</p>
+            <p class="slack-project__role-body">
+              I led research synthesis, usability testing, and participant analysis. I helped identify high-severity usability issues, translate findings into redesign concepts, and validate solutions through a second round of testing.
+            </p>
+          </aside>
+        </div>
+      </section>
+
+      <!-- Section 3: The Problem -->
+      <section id="the-problem" class="case-study__section slack-problem">
+        <p class="slack-problem__eyebrow reveal">
+          <span class="slack-problem__rule" aria-hidden="true"></span>
+          The Problem
+        </p>
+        <h2 class="slack-problem__title reveal">Slack hides its own state.</h2>
+        <p class="slack-problem__body reveal">
+          When users need to find saved information, understand why they are receiving notifications, or navigate a new workspace, they often believe they completed tasks successfully when they actually failed. Slack frequently failed to communicate where information lived, what actions did, and whether a task was completed.
+        </p>
+        <p class="slack-problem__callout reveal">
+          The result was false confidence, confusion, and wasted time. Users were finishing tasks wrong and had no idea.
+        </p>
+      </section>
+
+      <!-- Section 4: Process -->
+      <section id="process" class="case-study__section slack-process">
+        <p class="slack-process__eyebrow reveal">
+          <span class="slack-process__rule" aria-hidden="true"></span>
+          Process
+        </p>
+        <h2 class="slack-process__title reveal">Four stages from evaluation to validation.</h2>
+        <p class="slack-process__intro reveal">
+          We followed a full research-to-validation loop. Heuristic findings shaped what we tested in moderated sessions. Moderated failures shaped what we redesigned. Redesigns were validated with a fresh cohort through UserTesting.com.
+        </p>
+
+        <ol class="slack-process__list reveal">
+          <li class="slack-process__step">
+            <span class="slack-process__num" aria-hidden="true">01</span>
+            <div class="slack-process__content">
+              <h3 class="slack-process__step-title">Heuristic Evaluation</h3>
+              <p class="slack-process__step-body">
+                Reviewed 12 Slack workflows against Nielsen's 10 heuristics to identify usability issues before involving any participants
+              </p>
+            </div>
+          </li>
+          <li class="slack-process__step">
+            <span class="slack-process__num" aria-hidden="true">02</span>
+            <div class="slack-process__content">
+              <h3 class="slack-process__step-title">Moderated Testing</h3>
+              <p class="slack-process__step-body">
+                Defined test scenarios based on heuristic findings, then ran 8 participants through structured tasks on the current Slack interface with a facilitator present
+              </p>
+            </div>
+          </li>
+          <li class="slack-process__step">
+            <span class="slack-process__num" aria-hidden="true">03</span>
+            <div class="slack-process__content">
+              <h3 class="slack-process__step-title">Designing Changes</h3>
+              <p class="slack-process__step-body">
+                Used moderated session failures to create targeted prototypes addressing the two highest-severity issues found in testing
+              </p>
+            </div>
+          </li>
+          <li class="slack-process__step">
+            <span class="slack-process__num" aria-hidden="true">04</span>
+            <div class="slack-process__content">
+              <h3 class="slack-process__step-title">Unmoderated Validation</h3>
+              <p class="slack-process__step-body">
+                Deployed redesigns to 8 new participants via UserTesting.com to confirm improvements held up without a facilitator present
+              </p>
+            </div>
+          </li>
+        </ol>
+      </section>
+
+      <!-- Section 5: Heuristic Evaluation -->
+      <section id="heuristic-evaluation" class="case-study__section slack-heuristic">
+        <p class="slack-heuristic__eyebrow reveal">
+          <span class="slack-heuristic__rule" aria-hidden="true"></span>
+          Heuristic Evaluation
+        </p>
+        <h2 class="slack-heuristic__title reveal">12 workflows. Four recurring themes.</h2>
+        <p class="slack-heuristic__intro reveal">
+          Before running any user tests, we evaluated 12 Slack workflows against Nielsen's 10 usability heuristics. Four themes emerged consistently across almost every workflow.
+        </p>
+
+        <div class="slack-heuristic__grid reveal">
+          <article class="slack-heuristic__card">
+            <span class="slack-heuristic__badge">01</span>
+            <h3 class="slack-heuristic__card-title">Visibility Breaks Down</h3>
+            <p class="slack-heuristic__card-body">
+              Critical system state was hidden or absent at the moments users needed it most
+            </p>
+          </article>
+          <article class="slack-heuristic__card">
+            <span class="slack-heuristic__badge">02</span>
+            <h3 class="slack-heuristic__card-title">Weak or Missing Feedback</h3>
+            <p class="slack-heuristic__card-body">
+              Actions completed without confirmation, leaving users uncertain whether anything happened
+            </p>
+          </article>
+          <article class="slack-heuristic__card">
+            <span class="slack-heuristic__badge">03</span>
+            <h3 class="slack-heuristic__card-title">Fragmented Navigation</h3>
+            <p class="slack-heuristic__card-body">
+              Related settings were split across multiple menus with no clear path between them
+            </p>
+          </article>
+          <article class="slack-heuristic__card">
+            <span class="slack-heuristic__badge">04</span>
+            <h3 class="slack-heuristic__card-title">Workflow Friction</h3>
+            <p class="slack-heuristic__card-body">
+              Simple tasks required more steps than expected, creating consistent drop-off patterns
+            </p>
+          </article>
+        </div>
+
+        <p class="slack-heuristic__callout reveal">
+          This is a more dangerous failure mode than simple confusion. When the interface gives users false confidence, they stop looking for the right answer.
+        </p>
+      </section>
+
+      <!-- Section 6: Moderated Testing -->
+      <section id="moderated-testing" class="case-study__section slack-moderated">
+        <p class="slack-moderated__eyebrow reveal">
+          <span class="slack-moderated__rule" aria-hidden="true"></span>
+          Moderated Testing
+        </p>
+        <h2 class="slack-moderated__title reveal">Three tasks. Two major failures. One root cause.</h2>
+        <p class="slack-moderated__intro reveal">
+          Eight participants completed three structured tasks with the original Slack interface. Task 1 passed. Tasks 2 and 3 revealed the core issues that would drive the redesign.
+        </p>
+
+        <figure class="slack-moderated__table-wrap reveal">
+          <img
+            src="images/moderated results original slack.png"
+            alt="Moderated Results table for original Slack across eight participants and three tasks"
+            class="slack-moderated__table-img"
+            width="1200"
+            height="auto"
+          >
+        </figure>
+
+        <!-- Finding 01 -->
+        <article class="slack-finding reveal">
+          <header class="slack-finding__header">
+            <span class="slack-finding__num slack-finding__num--pass">01</span>
+            <div class="slack-finding__heading">
+              <h3 class="slack-finding__title">Navigation and Orientation</h3>
+              <p class="slack-finding__goal"><em>“Find where your team is communicating and introduce yourself.”</em></p>
+            </div>
+          </header>
+
+          <div class="slack-finding__stats">
+            <div class="slack-finding__stat">
+              <span class="slack-finding__stat-label">Moderated</span>
+              <span class="slack-finding__stat-value slack-finding__stat-value--pass">8/8</span>
+            </div>
+          </div>
+
+          <p class="slack-finding__body">
+            Users immediately understood Slack's channel structure and knew exactly where to go to introduce themselves to the team.
+          </p>
+          <blockquote class="slack-finding__quote">
+            <p><em>“Ohhh Slack. I feel comfy here.”</em></p>
+          </blockquote>
+          <p class="slack-finding__body">
+            Navigation worked because it met expectations. Users recognized familiar patterns and completed the task without hesitation.
+          </p>
+        </article>
+
+        <!-- Finding 02 -->
+        <article class="slack-finding reveal">
+          <header class="slack-finding__header">
+            <span class="slack-finding__num slack-finding__num--fail">02</span>
+            <div class="slack-finding__heading">
+              <h3 class="slack-finding__title">Message Retrieval</h3>
+              <p class="slack-finding__goal"><em>“Find the message your manager saved for you.”</em></p>
+            </div>
+          </header>
+
+          <div class="slack-finding__stats">
+            <div class="slack-finding__stat">
+              <span class="slack-finding__stat-label">Moderated</span>
+              <span class="slack-finding__stat-value slack-finding__stat-value--fail">3/8</span>
+            </div>
+            <div class="slack-finding__stat slack-finding__stat--severity">
+              <span class="slack-finding__stat-label slack-finding__stat-label--fail">Severity</span>
+              <span class="slack-finding__stat-value slack-finding__stat-value--fail">4/4</span>
+            </div>
+          </div>
+
+          <p class="slack-finding__body">
+            Users could not distinguish between Saved, Pinned, and Later. The labels competed with each other and none clearly signaled where a manager's saved message would live.
+          </p>
+          <blockquote class="slack-finding__quote">
+            <p><em>“There is usually a saved button here. This is terribly confusing.”</em></p>
+          </blockquote>
+          <p class="slack-finding__body">
+            Users understood saving as a concept, but Slack's implementation did not match their mental model—so most never found the message.
+          </p>
+        </article>
+
+        <!-- Finding 03 -->
+        <article class="slack-finding reveal">
+          <header class="slack-finding__header">
+            <span class="slack-finding__num slack-finding__num--fail">03</span>
+            <div class="slack-finding__heading">
+              <h3 class="slack-finding__title">Notification Prioritization</h3>
+              <p class="slack-finding__goal"><em>“Figure out why you are receiving notifications and update your settings.”</em></p>
+            </div>
+          </header>
+
+          <div class="slack-finding__stats">
+            <div class="slack-finding__stat">
+              <span class="slack-finding__stat-label">Moderated</span>
+              <span class="slack-finding__stat-value slack-finding__stat-value--fail">2/8</span>
+            </div>
+            <div class="slack-finding__stat slack-finding__stat--severity">
+              <span class="slack-finding__stat-label slack-finding__stat-label--fail">Severity</span>
+              <span class="slack-finding__stat-value slack-finding__stat-value--fail">4/4</span>
+            </div>
+          </div>
+
+          <p class="slack-finding__body">
+            Notification settings were spread across at least three separate menus. Users could not determine what settings were active, why notifications appeared, or where the controls lived.
+          </p>
+          <blockquote class="slack-finding__quote">
+            <p><em>“I have no idea where to even start with this.”</em></p>
+          </blockquote>
+          <p class="slack-finding__body">
+            Critical system state was hidden. Users needed to know what was happening before they could change it, and Slack never told them.
+          </p>
+        </article>
+      </section>
+
+      <!-- Section 7: Designing Changes -->
+      <section id="designing-changes" class="case-study__section slack-design">
+        <p class="slack-design__eyebrow reveal">
+          <span class="slack-design__rule" aria-hidden="true"></span>
+          Designing Changes
+        </p>
+        <h2 class="slack-design__title reveal">Two targeted solutions built from testing failures.</h2>
+        <p class="slack-design__intro reveal">
+          Both redesigns targeted the same underlying problem: Slack was not communicating what it was doing. Click any image to expand it.
+        </p>
+
+        <div class="slack-design__block reveal">
+          <p class="slack-design__label">Redesign 01</p>
+          <h3 class="slack-design__subtitle">Save For Me and Pin For Everyone</h3>
+          <p class="slack-design__body">
+            We modified the UX writing of the pin and save options to use clearer, action-oriented language: Save for Me for personal content, and Pin for All for channel-wide visibility.
+          </p>
+
+          <div class="slack-design__compare">
+            <figure class="slack-design__shot">
+              <p class="slack-design__shot-label">Before</p>
+              <button
+                type="button"
+                class="slack-design__expand"
+                data-expand-src="images/beforeredesign01.png"
+                data-expand-alt="Before redesign: Slack message actions with Saved, Pinned, and Later"
+                aria-label="Expand before redesign screenshot"
+              >
+                <img
+                  src="images/beforeredesign01.png"
+                  alt="Before redesign: Slack message actions with Saved, Pinned, and Later"
+                  class="slack-design__img"
+                  width="640"
+                  height="auto"
+                >
+                <span class="slack-design__expand-chip" aria-hidden="true">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M14 4h6v6M10 20H4v-6M20 4l-7 7M4 20l7-7" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                  Expand
+                </span>
+              </button>
+              <figcaption class="slack-design__caption">
+                Saved, Pinned, and Later with no clear distinction of ownership or visibility
+              </figcaption>
+            </figure>
+
+            <figure class="slack-design__shot">
+              <p class="slack-design__shot-label slack-design__shot-label--after">After</p>
+              <button
+                type="button"
+                class="slack-design__expand"
+                data-expand-src="images/afterredesign01.png"
+                data-expand-alt="After redesign: Slack message actions with Save for Me and Pin for All"
+                aria-label="Expand after redesign screenshot"
+              >
+                <img
+                  src="images/afterredesign01.png"
+                  alt="After redesign: Slack message actions with Save for Me and Pin for All"
+                  class="slack-design__img"
+                  width="640"
+                  height="auto"
+                >
+                <span class="slack-design__expand-chip" aria-hidden="true">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M14 4h6v6M10 20H4v-6M20 4l-7 7M4 20l7-7" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                  Expand
+                </span>
+              </button>
+              <figcaption class="slack-design__caption">
+                Save for Me and Pin for All make the action personal vs. shared at a glance
+              </figcaption>
+            </figure>
+          </div>
+        </div>
+
+        <div class="slack-design__block reveal">
+          <p class="slack-design__label">Redesign 02</p>
+          <h3 class="slack-design__subtitle">Unified Notification Center</h3>
+          <p class="slack-design__body">
+            A persistent notification status bubble and centralized settings panel replaced three separate menus. Users can now see what is active and change it from one place.
+          </p>
+
+          <div class="slack-design__compare">
+            <figure class="slack-design__shot">
+              <p class="slack-design__shot-label">Before</p>
+              <button
+                type="button"
+                class="slack-design__expand"
+                data-expand-src="images/redesign2before.png"
+                data-expand-alt="Before redesign: Slack notification preferences buried across menus"
+                aria-label="Expand before redesign 02 screenshot"
+              >
+                <img
+                  src="images/redesign2before.png"
+                  alt="Before redesign: Slack notification preferences buried across menus"
+                  class="slack-design__img"
+                  width="640"
+                  height="auto"
+                >
+                <span class="slack-design__expand-chip" aria-hidden="true">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M14 4h6v6M10 20H4v-6M20 4l-7 7M4 20l7-7" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                  Expand
+                </span>
+              </button>
+              <figcaption class="slack-design__caption">
+                Notification settings buried across three menus with no visible current state
+              </figcaption>
+            </figure>
+
+            <figure class="slack-design__shot">
+              <p class="slack-design__shot-label slack-design__shot-label--after">After</p>
+              <button
+                type="button"
+                class="slack-design__expand"
+                data-expand-src="images/redeisgn2after.png"
+                data-expand-alt="After redesign: Unified System Notifications panel with persistent status"
+                aria-label="Expand after redesign 02 screenshot"
+              >
+                <img
+                  src="images/redeisgn2after.png"
+                  alt="After redesign: Unified System Notifications panel with persistent status"
+                  class="slack-design__img"
+                  width="640"
+                  height="auto"
+                >
+                <span class="slack-design__expand-chip" aria-hidden="true">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M14 4h6v6M10 20H4v-6M20 4l-7 7M4 20l7-7" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                  Expand
+                </span>
+              </button>
+              <figcaption class="slack-design__caption">
+                Persistent status bubble per channel, global controls centralized
+              </figcaption>
+            </figure>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section 8: Unmoderated Validation -->
+      <section id="unmoderated-validation" class="case-study__section slack-validate">
+        <p class="slack-validate__eyebrow reveal">
+          <span class="slack-validate__rule" aria-hidden="true"></span>
+          Unmoderated Validation
+        </p>
+        <h2 class="slack-validate__title reveal">Same tasks. New cohort. Completely different results.</h2>
+        <p class="slack-validate__intro reveal">
+          8 new participants tested the redesigned prototypes via UserTesting.com. The same tasks that produced major failures in the moderated session achieved 100% success.
+        </p>
+
+        <figure class="slack-validate__table-wrap reveal">
+          <img
+            src="images/usertesting.com.png"
+            alt="Unmoderated Results table after redesign via UserTesting.com"
+            class="slack-validate__table-img"
+            width="1200"
+            height="auto"
+          >
+        </figure>
+
+        <div class="slack-validate__metrics reveal">
+          <article class="slack-validate__metric">
+            <p class="slack-validate__metric-value">
+              <span class="slack-validate__old"><s>37.5%</s></span>
+              <span class="slack-validate__arrow" aria-hidden="true">→</span>
+              <span class="slack-validate__new">100%</span>
+            </p>
+            <p class="slack-validate__metric-label">Message retrieval success after redesign</p>
+          </article>
+          <article class="slack-validate__metric">
+            <p class="slack-validate__metric-value">
+              <span class="slack-validate__old"><s>25%</s></span>
+              <span class="slack-validate__arrow" aria-hidden="true">→</span>
+              <span class="slack-validate__new">100%</span>
+            </p>
+            <p class="slack-validate__metric-label">Notification management success after redesign</p>
+          </article>
+        </div>
+      </section>
+
+      <!-- Section 9: Business Value -->
+      <section id="business-value" class="case-study__section slack-value">
+        <p class="slack-value__eyebrow reveal">
+          <span class="slack-value__rule" aria-hidden="true"></span>
+          Business Value
+        </p>
+        <h2 class="slack-value__title reveal">Why this matters beyond the test session.</h2>
+        <p class="slack-value__intro reveal">
+          Slack is used hundreds of times per day. When core features are too confusing to use correctly, the cost is not one failed task in a lab. It is every employee, every day, slightly less productive than they should be.
+        </p>
+
+        <div class="slack-value__grid reveal">
+          <article class="slack-value__card">
+            <h3 class="slack-value__card-title">Productivity up</h3>
+            <p class="slack-value__card-body">
+              When users can find information and trust system feedback, they spend less time searching and more time doing actual work.
+            </p>
+          </article>
+          <article class="slack-value__card">
+            <h3 class="slack-value__card-title">Support load down</h3>
+            <p class="slack-value__card-body">
+              Confused users become support tickets. Clear interfaces reduce the volume of questions that reach IT and operations teams.
+            </p>
+          </article>
+          <article class="slack-value__card">
+            <h3 class="slack-value__card-title">Feature adoption up</h3>
+            <p class="slack-value__card-body">
+              Features users cannot find are features that do not exist for them. Better visibility drives genuine usage across the organization.
+            </p>
+          </article>
+          <article class="slack-value__card">
+            <h3 class="slack-value__card-title">Onboarding faster</h3>
+            <p class="slack-value__card-body">
+              New team members get productive faster when the tool communicates clearly. Every week of confusion has a measurable cost.
+            </p>
+          </article>
+        </div>
+
+        <p class="slack-value__callout reveal">
+          Good communication tools should not make users guess. Visibility creates confidence, and confidence creates efficiency.
+        </p>
+      </section>
+
+      <!-- Section 10: The Outcome -->
+      <section id="the-outcome" class="case-study__section slack-outcome">
+        <p class="slack-outcome__eyebrow reveal">
+          <span class="slack-outcome__rule" aria-hidden="true"></span>
+          The Outcome
+        </p>
+
+        <div class="slack-outcome__grid reveal">
+          <div class="slack-outcome__copy">
+            <h2 class="slack-outcome__title">Clear systems create confident users.</h2>
+            <p class="slack-outcome__body">
+              Before the redesigns, users regularly believed they completed tasks when they had not. After: users could locate saved information, understand notification settings, and complete tasks without confusion. Both severity-4 issues went from near-complete failure to 100% task success.
+            </p>
+          </div>
+
+          <div class="slack-outcome__metrics">
+            <article class="slack-outcome__metric">
+              <p class="slack-outcome__metric-value">
+                <span class="slack-outcome__old"><s>37.5%</s></span>
+                <span class="slack-outcome__arrow" aria-hidden="true">→</span>
+                <span class="slack-outcome__new">100%</span>
+              </p>
+              <p class="slack-outcome__metric-label">Message retrieval success</p>
+            </article>
+            <article class="slack-outcome__metric">
+              <p class="slack-outcome__metric-value">
+                <span class="slack-outcome__old"><s>25%</s></span>
+                <span class="slack-outcome__arrow" aria-hidden="true">→</span>
+                <span class="slack-outcome__new">100%</span>
+              </p>
+              <p class="slack-outcome__metric-label">Notification management success</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="thanks-section">
+        <div class="thanks-inner reveal">
+          <p class="thanks-label">That's a wrap</p>
+          <h2 class="thanks-heading">Thanks for reading.</h2>
+          <p class="thanks-body">If you have any questions about this project or want to connect, feel free to reach out.</p>
+        </div>
+      </section>
+
+      <!-- Next project navigation -->
+      <nav class="case-study__next" aria-label="Case study navigation">
+        <a href="index.html#work" class="case-study__next-link">← Back to Work</a>
+        <a href="case-study-nest.html" class="case-study__next-link">Next: Nest Thermostat Redesign →</a>
+      </nav>
+    </div>
+  </main>
+
+  <footer class="contact-footer">
+    <div class="contact-footer__inner">
+      <div class="contact-footer__left">
+        <a href="index.html" class="contact-footer__monogram">YD</a>
+        <p class="contact-footer__tagline">
+          More projects and experiences are always on the way. Let's keep in touch!
+        </p>
+        <p class="contact-footer__copyright">© 2026 Yu Dian Dong. All Rights Reserved.</p>
+      </div>
+
+      <div class="contact-footer__right">
+        <div class="contact-footer__col">
+          <h3>Connect</h3>
+          <ul class="contact-footer__links">
+            <li>
+              <button type="button" id="copy-email" class="contact-footer__copy-btn">Copy Email</button>
+            </li>
+            <li>
+              <a href="https://www.linkedin.com/in/yu-dian-dong/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+            </li>
+            <li>
+              <a href="https://www.instagram.com/yudian.dong/" target="_blank" rel="noopener noreferrer">Instagram</a>
+            </li>
+          </ul>
+        </div>
+        <div class="contact-footer__col">
+          <h3>About</h3>
+          <ul class="contact-footer__links">
+            <li><a href="about.html">About Me</a></li>
+            <li>
+              <a href="https://drive.google.com/file/d/1kiobH4x5Cl2rX7z3iEvS0YN4FEhfI2Ea/view?usp=sharing" target="_blank" rel="noopener noreferrer">Resume</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <div
+    id="slack-expand-lightbox"
+    class="slack-expand-lightbox"
+    role="dialog"
+    aria-modal="true"
+    aria-label="Expanded redesign screenshot"
+    aria-hidden="true"
+  >
+    <div class="slack-expand-lightbox__backdrop" data-expand-close tabindex="-1"></div>
+    <button
+      type="button"
+      class="slack-expand-lightbox__close"
+      id="slack-expand-close"
+      data-expand-close
+      aria-label="Tap to close"
+    >
+      Tap to close
+    </button>
+    <div class="slack-expand-lightbox__stage">
+      <img id="slack-expand-img" src="" alt="" class="slack-expand-lightbox__img" decoding="async" />
+    </div>
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

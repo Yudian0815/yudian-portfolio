@@ -351,4 +351,118 @@
     );
   }
 
+  /* Slack redesign expand lightbox */
+  var slackExpandLightbox = document.getElementById('slack-expand-lightbox');
+  var slackExpandImg = document.getElementById('slack-expand-img');
+  var slackExpandClose = document.getElementById('slack-expand-close');
+  var slackExpandTriggers = document.querySelectorAll('.slack-design__expand');
+
+  if (slackExpandLightbox && slackExpandImg && slackExpandTriggers.length) {
+    var slackExpandFocusBefore = null;
+
+    function openSlackExpand(src, alt) {
+      if (!src) return;
+      slackExpandFocusBefore = document.activeElement;
+      slackExpandImg.setAttribute('src', src);
+      slackExpandImg.setAttribute('alt', alt || '');
+      slackExpandLightbox.classList.add('is-open');
+      slackExpandLightbox.setAttribute('aria-hidden', 'false');
+      document.body.classList.add('slack-expand-open');
+      if (slackExpandClose) slackExpandClose.focus();
+    }
+
+    function closeSlackExpand() {
+      slackExpandLightbox.classList.remove('is-open');
+      slackExpandLightbox.setAttribute('aria-hidden', 'true');
+      document.body.classList.remove('slack-expand-open');
+      slackExpandImg.removeAttribute('src');
+      if (slackExpandFocusBefore && typeof slackExpandFocusBefore.focus === 'function') {
+        slackExpandFocusBefore.focus();
+      }
+      slackExpandFocusBefore = null;
+    }
+
+    slackExpandTriggers.forEach(function (btn) {
+      btn.addEventListener('click', function () {
+        openSlackExpand(
+          btn.getAttribute('data-expand-src'),
+          btn.getAttribute('data-expand-alt')
+        );
+      });
+    });
+
+    slackExpandLightbox.querySelectorAll('[data-expand-close]').forEach(function (el) {
+      el.addEventListener('click', closeSlackExpand);
+    });
+
+    document.addEventListener(
+      'keydown',
+      function (e) {
+        if (!slackExpandLightbox.classList.contains('is-open')) return;
+        if (e.key === 'Escape') {
+          e.preventDefault();
+          closeSlackExpand();
+        }
+      },
+      true
+    );
+  }
+
+  /* Nest mid-fi expand lightbox */
+  var nestExpandLightbox = document.getElementById('nest-expand-lightbox');
+  var nestExpandImg = document.getElementById('nest-expand-img');
+  var nestExpandClose = document.getElementById('nest-expand-close');
+  var nestExpandTriggers = document.querySelectorAll('.nest-expand');
+
+  if (nestExpandLightbox && nestExpandImg && nestExpandTriggers.length) {
+    var nestExpandFocusBefore = null;
+
+    function openNestExpand(src, alt) {
+      if (!src) return;
+      nestExpandFocusBefore = document.activeElement;
+      nestExpandImg.setAttribute('src', src);
+      nestExpandImg.setAttribute('alt', alt || '');
+      nestExpandLightbox.classList.add('is-open');
+      nestExpandLightbox.setAttribute('aria-hidden', 'false');
+      document.body.classList.add('nest-expand-open');
+      if (nestExpandClose) nestExpandClose.focus();
+    }
+
+    function closeNestExpand() {
+      nestExpandLightbox.classList.remove('is-open');
+      nestExpandLightbox.setAttribute('aria-hidden', 'true');
+      document.body.classList.remove('nest-expand-open');
+      nestExpandImg.removeAttribute('src');
+      if (nestExpandFocusBefore && typeof nestExpandFocusBefore.focus === 'function') {
+        nestExpandFocusBefore.focus();
+      }
+      nestExpandFocusBefore = null;
+    }
+
+    nestExpandTriggers.forEach(function (btn) {
+      btn.addEventListener('click', function () {
+        openNestExpand(
+          btn.getAttribute('data-expand-src'),
+          btn.getAttribute('data-expand-alt')
+        );
+      });
+    });
+
+    nestExpandLightbox.querySelectorAll('[data-expand-close]').forEach(function (el) {
+      el.addEventListener('click', closeNestExpand);
+    });
+
+    document.addEventListener(
+      'keydown',
+      function (e) {
+        if (!nestExpandLightbox.classList.contains('is-open')) return;
+        if (e.key === 'Escape') {
+          e.preventDefault();
+          closeNestExpand();
+        }
+      },
+      true
+    );
+  }
+
 })();

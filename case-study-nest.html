@@ -94,7 +94,7 @@
           </div>
           <div class="case-study__meta-cell">
             <span class="case-study__meta-label">TEAM</span>
-            <span class="case-study__meta-value">Giuseppe Mollo<br>Finley Peplinski<br>Alyssa Portnoy</span>
+            <span class="case-study__meta-value">Yu Dian, Giuseppe, Finley, Alyssa</span>
           </div>
           <div class="case-study__meta-cell">
             <span class="case-study__meta-label">TOOLS</span>
@@ -189,10 +189,38 @@
 
         <div class="case-study__two-img case-study__two-img--midfi reveal">
           <div class="case-study__wireframe-wrap case-study__wireframe-wrap--contain">
-            <img src="images/Mid fi Device Wireframes.png" alt="Mid fidelity device wireframes (circular screens)" width="800" height="600">
+            <button
+              type="button"
+              class="nest-expand"
+              data-expand-src="images/Mid fi Device Wireframes.png"
+              data-expand-alt="Mid fidelity device wireframes (circular screens)"
+              aria-label="Expand mid fidelity device wireframes"
+            >
+              <img src="images/Mid fi Device Wireframes.png" alt="Mid fidelity device wireframes (circular screens)" width="800" height="600">
+              <span class="nest-expand__chip" aria-hidden="true">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M14 4h6v6M10 20H4v-6M20 4l-7 7M4 20l7-7" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                Expand
+              </span>
+            </button>
           </div>
           <div class="case-study__wireframe-wrap case-study__wireframe-wrap--contain">
-            <img src="images/Mid fi App Wireframes.png" alt="Mid fidelity app wireframes" width="800" height="600">
+            <button
+              type="button"
+              class="nest-expand"
+              data-expand-src="images/Mid fi App Wireframes.png"
+              data-expand-alt="Mid fidelity app wireframes"
+              aria-label="Expand mid fidelity app wireframes"
+            >
+              <img src="images/Mid fi App Wireframes.png" alt="Mid fidelity app wireframes" width="800" height="600">
+              <span class="nest-expand__chip" aria-hidden="true">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M14 4h6v6M10 20H4v-6M20 4l-7 7M4 20l7-7" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                Expand
+              </span>
+            </button>
           </div>
         </div>
 
@@ -314,6 +342,29 @@
       </div>
     </div>
   </footer>
+
+  <div
+    id="nest-expand-lightbox"
+    class="nest-expand-lightbox"
+    role="dialog"
+    aria-modal="true"
+    aria-label="Expanded wireframe"
+    aria-hidden="true"
+  >
+    <div class="nest-expand-lightbox__backdrop" data-expand-close tabindex="-1"></div>
+    <button
+      type="button"
+      class="nest-expand-lightbox__close"
+      id="nest-expand-close"
+      data-expand-close
+      aria-label="Tap to close"
+    >
+      Tap to close
+    </button>
+    <div class="nest-expand-lightbox__stage">
+      <img id="nest-expand-img" src="" alt="" class="nest-expand-lightbox__img" decoding="async" />
+    </div>
+  </div>
 
   <script src="js/main.js"></script>
 </body>

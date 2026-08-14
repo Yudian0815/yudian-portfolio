@@ -227,6 +227,127 @@ a {
   color: inherit;
 }
 
+.site-nav__avatar-btn {
+  padding: 0;
+  margin: 0;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  border-radius: 50%;
+  flex-shrink: 0;
+  line-height: 0;
+  transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.site-nav__avatar-btn:hover {
+  transform: scale(1.04);
+}
+
+.site-nav__avatar-btn:focus-visible {
+  outline: 2px solid #007FFF;
+  outline-offset: 3px;
+}
+
+.site-nav__brand-link {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: inherit;
+  min-width: 0;
+}
+
+.site-nav__brand-link:hover .site-nav__brand-name,
+.site-nav__brand-link:focus-visible .site-nav__brand-name {
+  color: rgba(255, 255, 255, 0.88);
+}
+
+.site-nav__brand-link:focus-visible {
+  outline: 2px solid #007FFF;
+  outline-offset: 4px;
+  border-radius: 6px;
+}
+
+/* Nav profile portrait lightbox */
+.portrait-lightbox {
+  position: fixed;
+  inset: 0;
+  z-index: 400;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: clamp(3.5rem, 8vh, 4.5rem) clamp(1rem, 4vw, 2.5rem) clamp(1.5rem, 4vh, 2.5rem);
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transition: opacity 0.25s ease, visibility 0.25s ease;
+}
+
+.portrait-lightbox.is-open {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
+
+.portrait-lightbox__backdrop {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.92);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  cursor: pointer;
+}
+
+.portrait-lightbox__close {
+  position: absolute;
+  top: clamp(0.85rem, 2.5vh, 1.35rem);
+  right: clamp(0.85rem, 2.5vw, 1.5rem);
+  z-index: 2;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 999px;
+  background: rgba(12, 12, 12, 0.88);
+  color: #FFFFFF;
+  font-family: 'Inter', system-ui, sans-serif;
+  font-size: 0.85rem;
+  font-weight: 500;
+  padding: 0.55rem 0.95rem;
+  cursor: pointer;
+  transition: background 0.2s ease, border-color 0.2s ease;
+}
+
+.portrait-lightbox__close:hover,
+.portrait-lightbox__close:focus-visible {
+  background: rgba(0, 127, 255, 0.22);
+  border-color: rgba(0, 127, 255, 0.55);
+  outline: none;
+}
+
+.portrait-lightbox__stage {
+  position: relative;
+  z-index: 1;
+  width: min(92vw, 720px);
+  max-height: min(88vh, 900px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  pointer-events: none;
+}
+
+.portrait-lightbox__img {
+  max-width: 100%;
+  max-height: min(88vh, 900px);
+  width: auto;
+  height: auto;
+  object-fit: contain;
+  border-radius: 16px;
+  box-shadow: 0 24px 64px rgba(0, 0, 0, 0.55);
+  pointer-events: none;
+  user-select: none;
+}
+
+body.portrait-lightbox-open {
+  overflow: hidden;
+}
+
 .site-nav__avatar-wrap {
   position: relative;
   display: inline-flex;

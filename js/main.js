@@ -465,4 +465,72 @@
     );
   }
 
+  /* Nav profile portrait lightbox */
+  var avatarBtn = document.querySelector('.site-nav__avatar-btn');
+
+  if (avatarBtn) {
+    var portraitSrc = avatarBtn.getAttribute('data-portrait-src') || 'images/hero-portrait.jpg';
+    var portraitFocusBefore = null;
+
+    var portraitLightbox = document.createElement('div');
+    portraitLightbox.id = 'portrait-lightbox';
+    portraitLightbox.className = 'portrait-lightbox';
+    portraitLightbox.setAttribute('role', 'dialog');
+    portraitLightbox.setAttribute('aria-modal', 'true');
+    portraitLightbox.setAttribute('aria-label', 'Profile photo');
+    portraitLightbox.setAttribute('aria-hidden', 'true');
+    portraitLightbox.innerHTML =
+      '<div class="portrait-lightbox__backdrop" data-portrait-close tabindex="-1"></div>' +
+      '<button type="button" class="portrait-lightbox__close" id="portrait-lightbox-close" data-portrait-close aria-label="Tap to close">Tap to close</button>' +
+      '<div class="portrait-lightbox__stage">' +
+      '<img id="portrait-lightbox-img" src="" alt="Yu Dian Dong profile photo" class="portrait-lightbox__img" decoding="async" />' +
+      '</div>';
+    document.body.appendChild(portraitLightbox);
+
+    var portraitLightboxImg = document.getElementById('portrait-lightbox-img');
+    var portraitLightboxClose = document.getElementById('portrait-lightbox-close');
+
+    function openPortraitLightbox() {
+      portraitFocusBefore = document.activeElement;
+      portraitLightboxImg.setAttribute('src', portraitSrc);
+      portraitLightbox.classList.add('is-open');
+      portraitLightbox.setAttribute('aria-hidden', 'false');
+      document.body.classList.add('portrait-lightbox-open');
+      if (portraitLightboxClose) portraitLightboxClose.focus();
+    }
+
+    function closePortraitLightbox() {
+      portraitLightbox.classList.remove('is-open');
+      portraitLightbox.setAttribute('aria-hidden', 'true');
+      document.body.classList.remove('portrait-lightbox-open');
+      portraitLightboxImg.removeAttribute('src');
+      if (portraitFocusBefore && typeof portraitFocusBefore.focus === 'function') {
+        portraitFocusBefore.focus();
+      }
+      portraitFocusBefore = null;
+    }
+
+    avatarBtn.addEventListener('click', function (e) {
+      e.preventDefault();
+      e.stopPropagation();
+      openPortraitLightbox();
+    });
+
+    portraitLightbox.querySelectorAll('[data-portrait-close]').forEach(function (el) {
+      el.addEventListener('click', closePortraitLightbox);
+    });
+
+    document.addEventListener(
+      'keydown',
+      function (e) {
+        if (!portraitLightbox.classList.contains('is-open')) return;
+        if (e.key === 'Escape') {
+          e.preventDefault();
+          closePortraitLightbox();
+        }
+      },
+      true
+    );
+  }
+
 })();

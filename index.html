@@ -11,22 +11,31 @@
   <header class="site-header">
     <nav class="site-nav" aria-label="Primary navigation">
       <div class="site-nav__inner">
-        <a href="index.html" class="site-nav__brand">
-          <span class="site-nav__avatar-wrap">
-            <img
-              src="images/hero-portrait.jpg"
-              alt=""
-              class="site-nav__avatar"
-              width="40"
-              height="40"
-            >
-            <span class="site-nav__pulse" aria-hidden="true"></span>
-          </span>
-          <span class="site-nav__brand-text">
-            <span class="site-nav__brand-name">Yu Dian Dong</span>
-            <span class="site-nav__brand-status">Open for work</span>
-          </span>
-        </a>
+        <div class="site-nav__brand">
+          <button
+            type="button"
+            class="site-nav__avatar-btn"
+            data-portrait-src="images/hero-portrait.jpg"
+            aria-label="View profile photo"
+          >
+            <span class="site-nav__avatar-wrap">
+              <img
+                src="images/hero-portrait.jpg"
+                alt=""
+                class="site-nav__avatar"
+                width="40"
+                height="40"
+              >
+              <span class="site-nav__pulse" aria-hidden="true"></span>
+            </span>
+          </button>
+          <a href="index.html" class="site-nav__brand-link">
+            <span class="site-nav__brand-text">
+              <span class="site-nav__brand-name">Yu Dian Dong</span>
+              <span class="site-nav__brand-status">Open for work</span>
+            </span>
+          </a>
+        </div>
 
         <div class="site-nav__links">
           <a href="index.html" class="site-nav__link">Home</a>

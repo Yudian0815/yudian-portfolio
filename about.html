@@ -77,26 +77,15 @@
 
   <main class="case-study">
     <div class="case-study__inner">
-    <!-- Section 0: About hero -->
-    <section class="about-hero" aria-labelledby="about-hero-heading">
-      <h1 id="about-hero-heading" class="about-hero__title">
-        <span class="about-hero__line">Law and Accounting, No Thanks.</span>
-        <span class="about-hero__line">User Experience Design, <em class="about-hero__em">Yes Please.</em></span>
-      </h1>
-      <a href="#in-short" class="about-view-more about-view-more--left" aria-label="View more about me">
-        <span>View more</span>
-        <span class="about-view-more__arrow" aria-hidden="true">↓</span>
-      </a>
-    </section>
-
-    <!-- Section 1: In short -->
+    <!-- Section 1: In short (landing) -->
     <section
       id="in-short"
       class="about-landing reveal"
+      aria-labelledby="about-landing-heading"
     >
       <div class="about-landing__row">
         <div class="about-landing__copy">
-          <p class="about-landing__heading">In short</p>
+          <p id="about-landing-heading" class="about-landing__heading">In short</p>
           <p class="about-landing__body">
             Born and raised in New Zealand, I am currently pursuing my BFA in User Experience Design at the Savannah College of Art and Design.
           </p>
@@ -111,6 +100,11 @@
           <p class="about-landing__caption">Exploring nature</p>
         </div>
       </div>
+
+      <a href="#why-ux" class="about-view-more" aria-label="View more about me">
+        <span>View more</span>
+        <span class="about-view-more__arrow" aria-hidden="true">↓</span>
+      </a>
     </section>
 
     <!-- Section 2: Why UX? -->
@@ -124,6 +118,7 @@
         align-items: flex-start;
         gap: var(--space-64);
         flex-wrap: wrap;
+        scroll-margin-top: 96px;
       "
     >
       <div style="flex: 0 1 40%; min-width: 260px;">

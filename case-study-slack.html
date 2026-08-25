@@ -15,17 +15,15 @@
           <button
             type="button"
             class="site-nav__avatar-btn"
-            data-portrait-src="images/hero-portrait.jpg"
+            data-portrait-src="images/opt/hero-portrait-960w-lightbox.webp"
             aria-label="View profile photo"
           >
             <span class="site-nav__avatar-wrap">
-              <img
-                src="images/hero-portrait.jpg"
-                alt=""
-                class="site-nav__avatar"
-                width="40"
-                height="40"
-              >
+              <picture>
+  <source type="image/avif" srcset="images/opt/hero-portrait-80w.avif 80w, images/opt/hero-portrait-160w.avif 160w, images/opt/hero-portrait-320w.avif 320w, images/opt/hero-portrait-640w.avif 640w, images/opt/hero-portrait-960w.avif 960w" sizes="40px">
+  <source type="image/webp" srcset="images/opt/hero-portrait-80w.webp 80w, images/opt/hero-portrait-160w.webp 160w, images/opt/hero-portrait-320w.webp 320w, images/opt/hero-portrait-640w.webp 640w, images/opt/hero-portrait-960w.webp 960w" sizes="40px">
+  <img src="images/opt/hero-portrait-80w.webp" class="site-nav__avatar" width="40" height="40" alt="" loading="eager" decoding="async" fetchpriority="high" data-lightbox-src="images/opt/hero-portrait-960w-lightbox.webp">
+</picture>
               <span class="site-nav__pulse" aria-hidden="true"></span>
             </span>
           </button>
@@ -88,7 +86,11 @@
     <div class="case-study__inner">
       <!-- Hero image (full width, first after nav) -->
       <div class="case-study__hero-img">
-        <img src="images/Slackthumbanil.png" alt="Slack Redesign, product overview" width="1200" height="auto">
+        <picture>
+  <source type="image/avif" srcset="images/opt/slackthumbanil-400w.avif 400w, images/opt/slackthumbanil-600w.avif 600w, images/opt/slackthumbanil-800w.avif 800w" sizes="(min-width: 1024px) 33vw, (min-width: 768px) 50vw, 100vw">
+  <source type="image/webp" srcset="images/opt/slackthumbanil-400w.webp 400w, images/opt/slackthumbanil-600w.webp 600w, images/opt/slackthumbanil-800w.webp 800w" sizes="(min-width: 1024px) 33vw, (min-width: 768px) 50vw, 100vw">
+  <img src="images/opt/slackthumbanil-400w.webp" width="1200" height="auto" alt="Slack Redesign, product overview" loading="lazy" decoding="async">
+</picture>
       </div>
 
       <!-- Section 1: Overview -->
@@ -271,13 +273,11 @@
         </p>
 
         <figure class="slack-moderated__table-wrap reveal">
-          <img
-            src="images/moderated results original slack.png"
-            alt="Moderated Results table for original Slack across eight participants and three tasks"
-            class="slack-moderated__table-img"
-            width="1200"
-            height="auto"
-          >
+          <picture>
+  <source type="image/avif" srcset="images/opt/moderated-results-original-slack-480w.avif 480w, images/opt/moderated-results-original-slack-800w.avif 800w, images/opt/moderated-results-original-slack-1200w.avif 1200w" sizes="100vw">
+  <source type="image/webp" srcset="images/opt/moderated-results-original-slack-480w.webp 480w, images/opt/moderated-results-original-slack-800w.webp 800w, images/opt/moderated-results-original-slack-1200w.webp 1200w" sizes="100vw">
+  <img src="images/opt/moderated-results-original-slack-480w.webp" class="slack-moderated__table-img" width="1200" height="auto" alt="Moderated Results table for original Slack across eight participants and three tasks" loading="lazy" decoding="async">
+</picture>
         </figure>
 
         <!-- Finding 01 -->
@@ -397,17 +397,15 @@
               <button
                 type="button"
                 class="slack-design__expand"
-                data-expand-src="images/beforeredesign01.png"
+                data-expand-src="images/opt/beforeredesign01-1200w-lightbox.webp"
                 data-expand-alt="Before redesign: Slack message actions with Saved, Pinned, and Later"
                 aria-label="Expand before redesign screenshot"
               >
-                <img
-                  src="images/beforeredesign01.png"
-                  alt="Before redesign: Slack message actions with Saved, Pinned, and Later"
-                  class="slack-design__img"
-                  width="640"
-                  height="auto"
-                >
+                <picture>
+  <source type="image/avif" srcset="images/opt/beforeredesign01-400w.avif 400w, images/opt/beforeredesign01-640w.avif 640w, images/opt/beforeredesign01-960w.avif 960w" sizes="(min-width: 768px) 50vw, 100vw">
+  <source type="image/webp" srcset="images/opt/beforeredesign01-400w.webp 400w, images/opt/beforeredesign01-640w.webp 640w, images/opt/beforeredesign01-960w.webp 960w" sizes="(min-width: 768px) 50vw, 100vw">
+  <img src="images/opt/beforeredesign01-400w.webp" class="slack-design__img" width="640" height="auto" alt="Before redesign: Slack message actions with Saved, Pinned, and Later" loading="lazy" decoding="async" data-lightbox-src="images/opt/beforeredesign01-1200w-lightbox.webp">
+</picture>
                 <span class="slack-design__expand-chip" aria-hidden="true">
                   <svg width="14" height="14" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M14 4h6v6M10 20H4v-6M20 4l-7 7M4 20l7-7" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
@@ -425,17 +423,15 @@
               <button
                 type="button"
                 class="slack-design__expand"
-                data-expand-src="images/afterredesign01.png"
+                data-expand-src="images/opt/afterredesign01-1200w-lightbox.webp"
                 data-expand-alt="After redesign: Slack message actions with Save for Me and Pin for All"
                 aria-label="Expand after redesign screenshot"
               >
-                <img
-                  src="images/afterredesign01.png"
-                  alt="After redesign: Slack message actions with Save for Me and Pin for All"
-                  class="slack-design__img"
-                  width="640"
-                  height="auto"
-                >
+                <picture>
+  <source type="image/avif" srcset="images/opt/afterredesign01-400w.avif 400w, images/opt/afterredesign01-640w.avif 640w, images/opt/afterredesign01-960w.avif 960w" sizes="(min-width: 768px) 50vw, 100vw">
+  <source type="image/webp" srcset="images/opt/afterredesign01-400w.webp 400w, images/opt/afterredesign01-640w.webp 640w, images/opt/afterredesign01-960w.webp 960w" sizes="(min-width: 768px) 50vw, 100vw">
+  <img src="images/opt/afterredesign01-400w.webp" class="slack-design__img" width="640" height="auto" alt="After redesign: Slack message actions with Save for Me and Pin for All" loading="lazy" decoding="async" data-lightbox-src="images/opt/afterredesign01-1200w-lightbox.webp">
+</picture>
                 <span class="slack-design__expand-chip" aria-hidden="true">
                   <svg width="14" height="14" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M14 4h6v6M10 20H4v-6M20 4l-7 7M4 20l7-7" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
@@ -463,17 +459,15 @@
               <button
                 type="button"
                 class="slack-design__expand"
-                data-expand-src="images/redesign2before.png"
+                data-expand-src="images/opt/redesign2before-1200w-lightbox.webp"
                 data-expand-alt="Before redesign: Slack notification preferences buried across menus"
                 aria-label="Expand before redesign 02 screenshot"
               >
-                <img
-                  src="images/redesign2before.png"
-                  alt="Before redesign: Slack notification preferences buried across menus"
-                  class="slack-design__img"
-                  width="640"
-                  height="auto"
-                >
+                <picture>
+  <source type="image/avif" srcset="images/opt/redesign2before-400w.avif 400w, images/opt/redesign2before-640w.avif 640w, images/opt/redesign2before-960w.avif 960w" sizes="(min-width: 768px) 50vw, 100vw">
+  <source type="image/webp" srcset="images/opt/redesign2before-400w.webp 400w, images/opt/redesign2before-640w.webp 640w, images/opt/redesign2before-960w.webp 960w" sizes="(min-width: 768px) 50vw, 100vw">
+  <img src="images/opt/redesign2before-400w.webp" class="slack-design__img" width="640" height="auto" alt="Before redesign: Slack notification preferences buried across menus" loading="lazy" decoding="async" data-lightbox-src="images/opt/redesign2before-1200w-lightbox.webp">
+</picture>
                 <span class="slack-design__expand-chip" aria-hidden="true">
                   <svg width="14" height="14" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M14 4h6v6M10 20H4v-6M20 4l-7 7M4 20l7-7" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
@@ -491,17 +485,15 @@
               <button
                 type="button"
                 class="slack-design__expand"
-                data-expand-src="images/redeisgn2after.png"
+                data-expand-src="images/opt/redeisgn2after-1200w-lightbox.webp"
                 data-expand-alt="After redesign: Unified System Notifications panel with persistent status"
                 aria-label="Expand after redesign 02 screenshot"
               >
-                <img
-                  src="images/redeisgn2after.png"
-                  alt="After redesign: Unified System Notifications panel with persistent status"
-                  class="slack-design__img"
-                  width="640"
-                  height="auto"
-                >
+                <picture>
+  <source type="image/avif" srcset="images/opt/redeisgn2after-400w.avif 400w, images/opt/redeisgn2after-640w.avif 640w, images/opt/redeisgn2after-960w.avif 960w" sizes="(min-width: 768px) 50vw, 100vw">
+  <source type="image/webp" srcset="images/opt/redeisgn2after-400w.webp 400w, images/opt/redeisgn2after-640w.webp 640w, images/opt/redeisgn2after-960w.webp 960w" sizes="(min-width: 768px) 50vw, 100vw">
+  <img src="images/opt/redeisgn2after-400w.webp" class="slack-design__img" width="640" height="auto" alt="After redesign: Unified System Notifications panel with persistent status" loading="lazy" decoding="async" data-lightbox-src="images/opt/redeisgn2after-1200w-lightbox.webp">
+</picture>
                 <span class="slack-design__expand-chip" aria-hidden="true">
                   <svg width="14" height="14" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M14 4h6v6M10 20H4v-6M20 4l-7 7M4 20l7-7" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
@@ -529,13 +521,11 @@
         </p>
 
         <figure class="slack-validate__table-wrap reveal">
-          <img
-            src="images/usertesting.com.png"
-            alt="Unmoderated Results table after redesign via UserTesting.com"
-            class="slack-validate__table-img"
-            width="1200"
-            height="auto"
-          >
+          <picture>
+  <source type="image/avif" srcset="images/opt/usertesting-com-480w.avif 480w, images/opt/usertesting-com-800w.avif 800w, images/opt/usertesting-com-1200w.avif 1200w" sizes="100vw">
+  <source type="image/webp" srcset="images/opt/usertesting-com-480w.webp 480w, images/opt/usertesting-com-800w.webp 800w, images/opt/usertesting-com-1200w.webp 1200w" sizes="100vw">
+  <img src="images/opt/usertesting-com-480w.webp" class="slack-validate__table-img" width="1200" height="auto" alt="Unmoderated Results table after redesign via UserTesting.com" loading="lazy" decoding="async">
+</picture>
         </figure>
 
         <div class="slack-validate__metrics reveal">

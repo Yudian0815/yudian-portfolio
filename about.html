@@ -15,17 +15,15 @@
           <button
             type="button"
             class="site-nav__avatar-btn"
-            data-portrait-src="images/hero-portrait.jpg"
+            data-portrait-src="images/opt/hero-portrait-960w-lightbox.webp"
             aria-label="View profile photo"
           >
             <span class="site-nav__avatar-wrap">
-              <img
-                src="images/hero-portrait.jpg"
-                alt=""
-                class="site-nav__avatar"
-                width="40"
-                height="40"
-              >
+              <picture>
+  <source type="image/avif" srcset="images/opt/hero-portrait-80w.avif 80w, images/opt/hero-portrait-160w.avif 160w, images/opt/hero-portrait-320w.avif 320w, images/opt/hero-portrait-640w.avif 640w, images/opt/hero-portrait-960w.avif 960w" sizes="40px">
+  <source type="image/webp" srcset="images/opt/hero-portrait-80w.webp 80w, images/opt/hero-portrait-160w.webp 160w, images/opt/hero-portrait-320w.webp 320w, images/opt/hero-portrait-640w.webp 640w, images/opt/hero-portrait-960w.webp 960w" sizes="40px">
+  <img src="images/opt/hero-portrait-80w.webp" class="site-nav__avatar" width="40" height="40" alt="" loading="eager" decoding="async" fetchpriority="high" data-lightbox-src="images/opt/hero-portrait-960w-lightbox.webp">
+</picture>
               <span class="site-nav__pulse" aria-hidden="true"></span>
             </span>
           </button>
@@ -100,12 +98,11 @@
           </p>
         </div>
         <div class="about-landing__media">
-          <img
-            src="images/inshorteshaylad.png"
-            alt="Yu Dian at a waterfall"
-            width="800"
-            height="500"
-          >
+          <picture>
+  <source type="image/avif" srcset="images/opt/inshorteshaylad-480w.avif 480w, images/opt/inshorteshaylad-800w.avif 800w, images/opt/inshorteshaylad-1200w.avif 1200w" sizes="(min-width: 768px) 50vw, 100vw">
+  <source type="image/webp" srcset="images/opt/inshorteshaylad-480w.webp 480w, images/opt/inshorteshaylad-800w.webp 800w, images/opt/inshorteshaylad-1200w.webp 1200w" sizes="(min-width: 768px) 50vw, 100vw">
+  <img src="images/opt/inshorteshaylad-480w.webp" width="800" height="500" alt="Yu Dian at a waterfall" loading="eager" decoding="async">
+</picture>
           <p class="about-landing__caption">Exploring nature</p>
         </div>
       </div>
@@ -168,10 +165,10 @@
         </p>
       </div>
       <div style="flex: 1 1 50%; min-width: 280px;">
-        <img
-          src="images/why-ux.jpg"
-          alt="Collaborating with teammates at SCAD"
-          style="
+        <picture>
+  <source type="image/avif" srcset="images/opt/why-ux-480w.avif 480w, images/opt/why-ux-800w.avif 800w, images/opt/why-ux-1200w.avif 1200w" sizes="(min-width: 768px) 45vw, 100vw">
+  <source type="image/webp" srcset="images/opt/why-ux-480w.webp 480w, images/opt/why-ux-800w.webp 800w, images/opt/why-ux-1200w.webp 1200w" sizes="(min-width: 768px) 45vw, 100vw">
+  <img src="images/opt/why-ux-480w.webp" alt="Collaborating with teammates at SCAD" loading="lazy" decoding="async" style="
             width: 100%;
             height: auto;
             max-height: 520px;
@@ -179,8 +176,8 @@
             object-position: center;
             border-radius: 12px;
             display: block;
-          "
-        >
+          ">
+</picture>
         <p
           style="
             font-family: 'Inter', system-ui, sans-serif;
@@ -244,13 +241,17 @@
             margin: 0;
           "
         >
-          Outside of design, I've been a musician for most of my life. I grew up playing piano and violin, and picked up guitar during COVID. When I can, I love trying new food spots and exploring nature.
+          Outside of design, I am part of the SCAD men's tennis team and have been passionate about the sport for most of my life. I grew up playing piano and violin, and picked up guitar during COVID. When I can, I love trying new food spots and exploring nature.
         </p>
       </div>
       <div style="flex: 1 1 50%; min-width: 280px; overflow: visible;">
         <div id="bounce-cards-container" style="position: relative; width: 680px; height: 380px; margin-left: -60px; display: flex; justify-content: center; align-items: center; flex-shrink: 0;">
           <div class="bounce-card card-0" data-index="0" role="button" tabindex="0" aria-label="Open tennis photo 1 in full screen">
-            <img src="images/bounccard1.jpg" alt="SCAD tennis card 1" />
+            <picture>
+  <source type="image/avif" srcset="images/opt/bounccard1-280w.avif 280w, images/opt/bounccard1-560w.avif 560w, images/opt/bounccard1-840w.avif 840w" sizes="280px">
+  <source type="image/webp" srcset="images/opt/bounccard1-280w.webp 280w, images/opt/bounccard1-560w.webp 560w, images/opt/bounccard1-840w.webp 840w" sizes="280px">
+  <img src="images/opt/bounccard1-280w.webp" alt="SCAD tennis card 1" loading="lazy" decoding="async" data-lightbox-src="images/opt/bounccard1-1200w-lightbox.webp">
+</picture>
             <span class="bounce-card__expand" aria-hidden="true">
               <svg width="14" height="14" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M14 4h6v6M10 20H4v-6M20 4l-7 7M4 20l7-7" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
@@ -258,7 +259,11 @@
               Expand
             </span>
           </div>
-          <div class="bounce-card card-1" data-index="1" role="button" tabindex="0" aria-label="Open tennis photo 2 in full screen"><img src="images/Bouncecard3.jpg" alt="SCAD tennis card 3" /></div>
+          <div class="bounce-card card-1" data-index="1" role="button" tabindex="0" aria-label="Open tennis photo 2 in full screen"><picture>
+  <source type="image/avif" srcset="images/opt/bouncecard3-280w.avif 280w, images/opt/bouncecard3-560w.avif 560w, images/opt/bouncecard3-840w.avif 840w" sizes="280px">
+  <source type="image/webp" srcset="images/opt/bouncecard3-280w.webp 280w, images/opt/bouncecard3-560w.webp 560w, images/opt/bouncecard3-840w.webp 840w" sizes="280px">
+  <img src="images/opt/bouncecard3-280w.webp" alt="SCAD tennis card 3" loading="lazy" decoding="async" data-lightbox-src="images/opt/bouncecard3-1200w-lightbox.webp">
+</picture></div>
           <div
             class="bounce-card card-2"
             data-index="2"
@@ -266,9 +271,21 @@
             tabindex="0"
             aria-label="Open tennis photo 3 in full screen"
             data-lightbox-crop-src-px="28"
-          ><img src="images/bouncecard4.JPG" alt="SCAD tennis card 4" /></div>
-          <div class="bounce-card card-3" data-index="3" role="button" tabindex="0" aria-label="Open tennis photo 4 in full screen"><img src="images/Bouncecard2.JPG" alt="SCAD tennis card 2" /></div>
-          <div class="bounce-card card-4" data-index="4" role="button" tabindex="0" aria-label="Open tennis photo 5 in full screen"><img src="images/bouncecard5.png" alt="SCAD tennis card 5" /></div>
+          ><picture>
+  <source type="image/avif" srcset="images/opt/bouncecard4-280w.avif 280w, images/opt/bouncecard4-560w.avif 560w, images/opt/bouncecard4-840w.avif 840w" sizes="280px">
+  <source type="image/webp" srcset="images/opt/bouncecard4-280w.webp 280w, images/opt/bouncecard4-560w.webp 560w, images/opt/bouncecard4-840w.webp 840w" sizes="280px">
+  <img src="images/opt/bouncecard4-280w.webp" alt="SCAD tennis card 4" loading="lazy" decoding="async" data-lightbox-src="images/opt/bouncecard4-1200w-lightbox.webp">
+</picture></div>
+          <div class="bounce-card card-3" data-index="3" role="button" tabindex="0" aria-label="Open tennis photo 4 in full screen"><picture>
+  <source type="image/avif" srcset="images/opt/bouncecard2-280w.avif 280w, images/opt/bouncecard2-560w.avif 560w, images/opt/bouncecard2-840w.avif 840w" sizes="280px">
+  <source type="image/webp" srcset="images/opt/bouncecard2-280w.webp 280w, images/opt/bouncecard2-560w.webp 560w, images/opt/bouncecard2-840w.webp 840w" sizes="280px">
+  <img src="images/opt/bouncecard2-280w.webp" alt="SCAD tennis card 2" loading="lazy" decoding="async" data-lightbox-src="images/opt/bouncecard2-1200w-lightbox.webp">
+</picture></div>
+          <div class="bounce-card card-4" data-index="4" role="button" tabindex="0" aria-label="Open tennis photo 5 in full screen"><picture>
+  <source type="image/avif" srcset="images/opt/bouncecard5-280w.avif 280w, images/opt/bouncecard5-560w.avif 560w, images/opt/bouncecard5-840w.avif 840w" sizes="280px">
+  <source type="image/webp" srcset="images/opt/bouncecard5-280w.webp 280w, images/opt/bouncecard5-560w.webp 560w, images/opt/bouncecard5-840w.webp 840w" sizes="280px">
+  <img src="images/opt/bouncecard5-280w.webp" alt="SCAD tennis card 5" loading="lazy" decoding="async" data-lightbox-src="images/opt/bouncecard5-1179w-lightbox.webp">
+</picture></div>
         </div>
         <p
           style="

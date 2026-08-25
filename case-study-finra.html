@@ -15,17 +15,15 @@
           <button
             type="button"
             class="site-nav__avatar-btn"
-            data-portrait-src="images/hero-portrait.jpg"
+            data-portrait-src="images/opt/hero-portrait-960w-lightbox.webp"
             aria-label="View profile photo"
           >
             <span class="site-nav__avatar-wrap">
-              <img
-                src="images/hero-portrait.jpg"
-                alt=""
-                class="site-nav__avatar"
-                width="40"
-                height="40"
-              >
+              <picture>
+  <source type="image/avif" srcset="images/opt/hero-portrait-80w.avif 80w, images/opt/hero-portrait-160w.avif 160w, images/opt/hero-portrait-320w.avif 320w, images/opt/hero-portrait-640w.avif 640w, images/opt/hero-portrait-960w.avif 960w" sizes="40px">
+  <source type="image/webp" srcset="images/opt/hero-portrait-80w.webp 80w, images/opt/hero-portrait-160w.webp 160w, images/opt/hero-portrait-320w.webp 320w, images/opt/hero-portrait-640w.webp 640w, images/opt/hero-portrait-960w.webp 960w" sizes="40px">
+  <img src="images/opt/hero-portrait-80w.webp" class="site-nav__avatar" width="40" height="40" alt="" loading="eager" decoding="async" fetchpriority="high" data-lightbox-src="images/opt/hero-portrait-960w-lightbox.webp">
+</picture>
               <span class="site-nav__pulse" aria-hidden="true"></span>
             </span>
           </button>
@@ -88,7 +86,11 @@
     <div class="case-study__inner">
       <!-- Hero image (reuse Deloitte hero styling) -->
       <div class="deloitte-hero">
-        <img src="images/Finraheader.jpeg" alt="SCADpro: FINRA team" width="1200" height="auto">
+        <picture>
+  <source type="image/avif" srcset="images/opt/finraheader-640w.avif 640w, images/opt/finraheader-960w.avif 960w, images/opt/finraheader-1200w.avif 1200w, images/opt/finraheader-1600w.avif 1600w" sizes="100vw">
+  <source type="image/webp" srcset="images/opt/finraheader-640w.webp 640w, images/opt/finraheader-960w.webp 960w, images/opt/finraheader-1200w.webp 1200w, images/opt/finraheader-1600w.webp 1600w" sizes="100vw">
+  <img src="images/opt/finraheader-640w.webp" width="1200" height="auto" alt="SCADpro: FINRA team" loading="eager" decoding="async">
+</picture>
       </div>
 
       <!-- Meta (title left; Year + Duration right) -->
@@ -217,10 +219,18 @@
 
         <div class="finra-behind-grid finra-behind-grid--two reveal">
           <figure class="deloitte-fig">
-            <img src="images/CollaborationFinra.jpg" alt="Team collaboration on FINRA project" width="800" height="500">
+            <picture>
+  <source type="image/avif" srcset="images/opt/collaborationfinra-480w.avif 480w, images/opt/collaborationfinra-800w.avif 800w, images/opt/collaborationfinra-1200w.avif 1200w" sizes="(min-width: 768px) 50vw, 100vw">
+  <source type="image/webp" srcset="images/opt/collaborationfinra-480w.webp 480w, images/opt/collaborationfinra-800w.webp 800w, images/opt/collaborationfinra-1200w.webp 1200w" sizes="(min-width: 768px) 50vw, 100vw">
+  <img src="images/opt/collaborationfinra-480w.webp" width="800" height="500" alt="Team collaboration on FINRA project" loading="lazy" decoding="async">
+</picture>
           </figure>
           <figure class="deloitte-fig finra-fig-presentchase">
-            <img src="images/presentchase.jpg" alt="Client presentation" width="800" height="500">
+            <picture>
+  <source type="image/avif" srcset="images/opt/presentchase-480w.avif 480w, images/opt/presentchase-800w.avif 800w, images/opt/presentchase-1200w.avif 1200w" sizes="(min-width: 768px) 50vw, 100vw">
+  <source type="image/webp" srcset="images/opt/presentchase-480w.webp 480w, images/opt/presentchase-800w.webp 800w, images/opt/presentchase-1200w.webp 1200w" sizes="(min-width: 768px) 50vw, 100vw">
+  <img src="images/opt/presentchase-480w.webp" width="800" height="500" alt="Client presentation" loading="lazy" decoding="async">
+</picture>
           </figure>
         </div>
       </section>

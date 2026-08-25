@@ -229,7 +229,7 @@
       if (!img) return;
       var cropPx = card.getAttribute('data-lightbox-crop-src-px');
       tennisSlides.push({
-        src: img.getAttribute('src'),
+        src: img.getAttribute('data-lightbox-src') || img.getAttribute('src'),
         alt: img.getAttribute('alt') || '',
         cropSrcPx: cropPx ? parseFloat(cropPx, 10) : 0
       });

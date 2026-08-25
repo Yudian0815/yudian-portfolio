@@ -1,0 +1,799 @@
+{
+  "images/hero-portrait.jpg": {
+    "source": "images/hero-portrait.jpg",
+    "slug": "hero-portrait",
+    "sizes": "40px",
+    "lazy": false,
+    "widths": [
+      80,
+      160,
+      320,
+      640,
+      960
+    ],
+    "webp": {
+      "80": "images/opt/hero-portrait-80w.webp",
+      "160": "images/opt/hero-portrait-160w.webp",
+      "320": "images/opt/hero-portrait-320w.webp",
+      "640": "images/opt/hero-portrait-640w.webp",
+      "960": "images/opt/hero-portrait-960w.webp"
+    },
+    "avif": {
+      "80": "images/opt/hero-portrait-80w.avif",
+      "160": "images/opt/hero-portrait-160w.avif",
+      "320": "images/opt/hero-portrait-320w.avif",
+      "640": "images/opt/hero-portrait-640w.avif",
+      "960": "images/opt/hero-portrait-960w.avif"
+    },
+    "fallback": "images/opt/hero-portrait-640w.webp",
+    "lightbox": "images/opt/hero-portrait-960w-lightbox.webp"
+  },
+  "images/Nest-Thermostat_Thumbnail.jpg": {
+    "source": "images/Nest-Thermostat_Thumbnail.jpg",
+    "slug": "nest-thermostat-thumbnail",
+    "sizes": "(min-width: 1024px) 33vw, (min-width: 768px) 50vw, 100vw",
+    "lazy": true,
+    "widths": [
+      400,
+      600,
+      800
+    ],
+    "webp": {
+      "400": "images/opt/nest-thermostat-thumbnail-400w.webp",
+      "600": "images/opt/nest-thermostat-thumbnail-600w.webp",
+      "800": "images/opt/nest-thermostat-thumbnail-800w.webp"
+    },
+    "avif": {
+      "400": "images/opt/nest-thermostat-thumbnail-400w.avif",
+      "600": "images/opt/nest-thermostat-thumbnail-600w.avif",
+      "800": "images/opt/nest-thermostat-thumbnail-800w.avif"
+    },
+    "fallback": "images/opt/nest-thermostat-thumbnail-800w.webp"
+  },
+  "images/Deloitte_Thumbnail.webp": {
+    "source": "images/Deloitte_Thumbnail.webp",
+    "slug": "deloitte-thumbnail",
+    "sizes": "(min-width: 1024px) 33vw, (min-width: 768px) 50vw, 100vw",
+    "lazy": true,
+    "widths": [
+      400,
+      600,
+      800
+    ],
+    "webp": {
+      "400": "images/opt/deloitte-thumbnail-400w.webp",
+      "600": "images/opt/deloitte-thumbnail-600w.webp",
+      "800": "images/opt/deloitte-thumbnail-800w.webp"
+    },
+    "avif": {
+      "400": "images/opt/deloitte-thumbnail-400w.avif",
+      "600": "images/opt/deloitte-thumbnail-600w.avif",
+      "800": "images/opt/deloitte-thumbnail-800w.avif"
+    },
+    "fallback": "images/opt/deloitte-thumbnail-800w.webp"
+  },
+  "images/Finra_thumbnail.jpg": {
+    "source": "images/Finra_thumbnail.jpg",
+    "slug": "finra-thumbnail",
+    "sizes": "(min-width: 1024px) 33vw, (min-width: 768px) 50vw, 100vw",
+    "lazy": true,
+    "widths": [
+      400,
+      600,
+      800
+    ],
+    "webp": {
+      "400": "images/opt/finra-thumbnail-400w.webp",
+      "600": "images/opt/finra-thumbnail-600w.webp",
+      "800": "images/opt/finra-thumbnail-800w.webp"
+    },
+    "avif": {
+      "400": "images/opt/finra-thumbnail-400w.avif",
+      "600": "images/opt/finra-thumbnail-600w.avif",
+      "800": "images/opt/finra-thumbnail-800w.avif"
+    },
+    "fallback": "images/opt/finra-thumbnail-800w.webp"
+  },
+  "images/Slackthumbanil.png": {
+    "source": "images/Slackthumbanil.png",
+    "slug": "slackthumbanil",
+    "sizes": "(min-width: 1024px) 33vw, (min-width: 768px) 50vw, 100vw",
+    "lazy": true,
+    "widths": [
+      400,
+      600,
+      800
+    ],
+    "webp": {
+      "400": "images/opt/slackthumbanil-400w.webp",
+      "600": "images/opt/slackthumbanil-600w.webp",
+      "800": "images/opt/slackthumbanil-800w.webp"
+    },
+    "avif": {
+      "400": "images/opt/slackthumbanil-400w.avif",
+      "600": "images/opt/slackthumbanil-600w.avif",
+      "800": "images/opt/slackthumbanil-800w.avif"
+    },
+    "fallback": "images/opt/slackthumbanil-800w.webp"
+  },
+  "images/inshorteshaylad.png": {
+    "source": "images/inshorteshaylad.png",
+    "slug": "inshorteshaylad",
+    "sizes": "(min-width: 768px) 50vw, 100vw",
+    "lazy": false,
+    "widths": [
+      480,
+      800,
+      1200
+    ],
+    "webp": {
+      "480": "images/opt/inshorteshaylad-480w.webp",
+      "800": "images/opt/inshorteshaylad-800w.webp",
+      "1200": "images/opt/inshorteshaylad-1200w.webp"
+    },
+    "avif": {
+      "480": "images/opt/inshorteshaylad-480w.avif",
+      "800": "images/opt/inshorteshaylad-800w.avif",
+      "1200": "images/opt/inshorteshaylad-1200w.avif"
+    },
+    "fallback": "images/opt/inshorteshaylad-800w.webp"
+  },
+  "images/why-ux.jpg": {
+    "source": "images/why-ux.jpg",
+    "slug": "why-ux",
+    "sizes": "(min-width: 768px) 45vw, 100vw",
+    "lazy": true,
+    "widths": [
+      480,
+      800,
+      1200
+    ],
+    "webp": {
+      "480": "images/opt/why-ux-480w.webp",
+      "800": "images/opt/why-ux-800w.webp",
+      "1200": "images/opt/why-ux-1200w.webp"
+    },
+    "avif": {
+      "480": "images/opt/why-ux-480w.avif",
+      "800": "images/opt/why-ux-800w.avif",
+      "1200": "images/opt/why-ux-1200w.avif"
+    },
+    "fallback": "images/opt/why-ux-800w.webp"
+  },
+  "images/bounccard1.jpg": {
+    "source": "images/bounccard1.jpg",
+    "slug": "bounccard1",
+    "sizes": "280px",
+    "lazy": true,
+    "widths": [
+      280,
+      560,
+      840
+    ],
+    "webp": {
+      "280": "images/opt/bounccard1-280w.webp",
+      "560": "images/opt/bounccard1-560w.webp",
+      "840": "images/opt/bounccard1-840w.webp"
+    },
+    "avif": {
+      "280": "images/opt/bounccard1-280w.avif",
+      "560": "images/opt/bounccard1-560w.avif",
+      "840": "images/opt/bounccard1-840w.avif"
+    },
+    "fallback": "images/opt/bounccard1-840w.webp",
+    "lightbox": "images/opt/bounccard1-1200w-lightbox.webp"
+  },
+  "images/Bouncecard3.jpg": {
+    "source": "images/Bouncecard3.jpg",
+    "slug": "bouncecard3",
+    "sizes": "280px",
+    "lazy": true,
+    "widths": [
+      280,
+      560,
+      840
+    ],
+    "webp": {
+      "280": "images/opt/bouncecard3-280w.webp",
+      "560": "images/opt/bouncecard3-560w.webp",
+      "840": "images/opt/bouncecard3-840w.webp"
+    },
+    "avif": {
+      "280": "images/opt/bouncecard3-280w.avif",
+      "560": "images/opt/bouncecard3-560w.avif",
+      "840": "images/opt/bouncecard3-840w.avif"
+    },
+    "fallback": "images/opt/bouncecard3-840w.webp",
+    "lightbox": "images/opt/bouncecard3-1200w-lightbox.webp"
+  },
+  "images/bouncecard4.JPG": {
+    "source": "images/bouncecard4.JPG",
+    "slug": "bouncecard4",
+    "sizes": "280px",
+    "lazy": true,
+    "widths": [
+      280,
+      560,
+      840
+    ],
+    "webp": {
+      "280": "images/opt/bouncecard4-280w.webp",
+      "560": "images/opt/bouncecard4-560w.webp",
+      "840": "images/opt/bouncecard4-840w.webp"
+    },
+    "avif": {
+      "280": "images/opt/bouncecard4-280w.avif",
+      "560": "images/opt/bouncecard4-560w.avif",
+      "840": "images/opt/bouncecard4-840w.avif"
+    },
+    "fallback": "images/opt/bouncecard4-840w.webp",
+    "lightbox": "images/opt/bouncecard4-1200w-lightbox.webp"
+  },
+  "images/Bouncecard2.JPG": {
+    "source": "images/Bouncecard2.JPG",
+    "slug": "bouncecard2",
+    "sizes": "280px",
+    "lazy": true,
+    "widths": [
+      280,
+      560,
+      840
+    ],
+    "webp": {
+      "280": "images/opt/bouncecard2-280w.webp",
+      "560": "images/opt/bouncecard2-560w.webp",
+      "840": "images/opt/bouncecard2-840w.webp"
+    },
+    "avif": {
+      "280": "images/opt/bouncecard2-280w.avif",
+      "560": "images/opt/bouncecard2-560w.avif",
+      "840": "images/opt/bouncecard2-840w.avif"
+    },
+    "fallback": "images/opt/bouncecard2-840w.webp",
+    "lightbox": "images/opt/bouncecard2-1200w-lightbox.webp"
+  },
+  "images/bouncecard5.png": {
+    "source": "images/bouncecard5.png",
+    "slug": "bouncecard5",
+    "sizes": "280px",
+    "lazy": true,
+    "widths": [
+      280,
+      560,
+      840
+    ],
+    "webp": {
+      "280": "images/opt/bouncecard5-280w.webp",
+      "560": "images/opt/bouncecard5-560w.webp",
+      "840": "images/opt/bouncecard5-840w.webp"
+    },
+    "avif": {
+      "280": "images/opt/bouncecard5-280w.avif",
+      "560": "images/opt/bouncecard5-560w.avif",
+      "840": "images/opt/bouncecard5-840w.avif"
+    },
+    "fallback": "images/opt/bouncecard5-840w.webp",
+    "lightbox": "images/opt/bouncecard5-1179w-lightbox.webp"
+  },
+  "images/nest-hero.png": {
+    "source": "images/nest-hero.png",
+    "slug": "nest-hero",
+    "sizes": "100vw",
+    "lazy": false,
+    "widths": [
+      640,
+      960,
+      1200,
+      1272
+    ],
+    "webp": {
+      "640": "images/opt/nest-hero-640w.webp",
+      "960": "images/opt/nest-hero-960w.webp",
+      "1200": "images/opt/nest-hero-1200w.webp",
+      "1272": "images/opt/nest-hero-1272w.webp"
+    },
+    "avif": {
+      "640": "images/opt/nest-hero-640w.avif",
+      "960": "images/opt/nest-hero-960w.avif",
+      "1200": "images/opt/nest-hero-1200w.avif",
+      "1272": "images/opt/nest-hero-1272w.avif"
+    },
+    "fallback": "images/opt/nest-hero-640w.webp"
+  },
+  "images/nest-moodboard.png": {
+    "source": "images/nest-moodboard.png",
+    "slug": "nest-moodboard",
+    "sizes": "100vw",
+    "lazy": true,
+    "widths": [
+      480,
+      800,
+      1200
+    ],
+    "webp": {
+      "480": "images/opt/nest-moodboard-480w.webp",
+      "800": "images/opt/nest-moodboard-800w.webp",
+      "1200": "images/opt/nest-moodboard-1200w.webp"
+    },
+    "avif": {
+      "480": "images/opt/nest-moodboard-480w.avif",
+      "800": "images/opt/nest-moodboard-800w.avif",
+      "1200": "images/opt/nest-moodboard-1200w.avif"
+    },
+    "fallback": "images/opt/nest-moodboard-800w.webp"
+  },
+  "images/Styleguide.png": {
+    "source": "images/Styleguide.png",
+    "slug": "styleguide",
+    "sizes": "100vw",
+    "lazy": true,
+    "widths": [
+      480,
+      800,
+      1200
+    ],
+    "webp": {
+      "480": "images/opt/styleguide-480w.webp",
+      "800": "images/opt/styleguide-800w.webp",
+      "1200": "images/opt/styleguide-1200w.webp"
+    },
+    "avif": {
+      "480": "images/opt/styleguide-480w.avif",
+      "800": "images/opt/styleguide-800w.avif",
+      "1200": "images/opt/styleguide-1200w.avif"
+    },
+    "fallback": "images/opt/styleguide-800w.webp"
+  },
+  "images/Device Low Fidelity Wireframes.png": {
+    "source": "images/Device Low Fidelity Wireframes.png",
+    "slug": "device-low-fidelity-wireframes",
+    "sizes": "(min-width: 768px) 50vw, 100vw",
+    "lazy": true,
+    "widths": [
+      480,
+      800,
+      1200
+    ],
+    "webp": {
+      "480": "images/opt/device-low-fidelity-wireframes-480w.webp",
+      "800": "images/opt/device-low-fidelity-wireframes-800w.webp",
+      "1200": "images/opt/device-low-fidelity-wireframes-1200w.webp"
+    },
+    "avif": {
+      "480": "images/opt/device-low-fidelity-wireframes-480w.avif",
+      "800": "images/opt/device-low-fidelity-wireframes-800w.avif",
+      "1200": "images/opt/device-low-fidelity-wireframes-1200w.avif"
+    },
+    "fallback": "images/opt/device-low-fidelity-wireframes-800w.webp"
+  },
+  "images/Low-fidelity App Wireframes.png": {
+    "source": "images/Low-fidelity App Wireframes.png",
+    "slug": "low-fidelity-app-wireframes",
+    "sizes": "(min-width: 768px) 50vw, 100vw",
+    "lazy": true,
+    "widths": [
+      480,
+      800,
+      1200
+    ],
+    "webp": {
+      "480": "images/opt/low-fidelity-app-wireframes-480w.webp",
+      "800": "images/opt/low-fidelity-app-wireframes-800w.webp",
+      "1200": "images/opt/low-fidelity-app-wireframes-1200w.webp"
+    },
+    "avif": {
+      "480": "images/opt/low-fidelity-app-wireframes-480w.avif",
+      "800": "images/opt/low-fidelity-app-wireframes-800w.avif",
+      "1200": "images/opt/low-fidelity-app-wireframes-1200w.avif"
+    },
+    "fallback": "images/opt/low-fidelity-app-wireframes-800w.webp"
+  },
+  "images/Mid fi Device Wireframes.png": {
+    "source": "images/Mid fi Device Wireframes.png",
+    "slug": "mid-fi-device-wireframes",
+    "sizes": "(min-width: 768px) 50vw, 100vw",
+    "lazy": true,
+    "widths": [
+      480,
+      800,
+      914
+    ],
+    "webp": {
+      "480": "images/opt/mid-fi-device-wireframes-480w.webp",
+      "800": "images/opt/mid-fi-device-wireframes-800w.webp",
+      "914": "images/opt/mid-fi-device-wireframes-914w.webp"
+    },
+    "avif": {
+      "480": "images/opt/mid-fi-device-wireframes-480w.avif",
+      "800": "images/opt/mid-fi-device-wireframes-800w.avif",
+      "914": "images/opt/mid-fi-device-wireframes-914w.avif"
+    },
+    "fallback": "images/opt/mid-fi-device-wireframes-800w.webp",
+    "lightbox": "images/opt/mid-fi-device-wireframes-914w-lightbox.webp"
+  },
+  "images/Mid fi App Wireframes.png": {
+    "source": "images/Mid fi App Wireframes.png",
+    "slug": "mid-fi-app-wireframes",
+    "sizes": "(min-width: 768px) 50vw, 100vw",
+    "lazy": true,
+    "widths": [
+      480,
+      800,
+      1200
+    ],
+    "webp": {
+      "480": "images/opt/mid-fi-app-wireframes-480w.webp",
+      "800": "images/opt/mid-fi-app-wireframes-800w.webp",
+      "1200": "images/opt/mid-fi-app-wireframes-1200w.webp"
+    },
+    "avif": {
+      "480": "images/opt/mid-fi-app-wireframes-480w.avif",
+      "800": "images/opt/mid-fi-app-wireframes-800w.avif",
+      "1200": "images/opt/mid-fi-app-wireframes-1200w.avif"
+    },
+    "fallback": "images/opt/mid-fi-app-wireframes-800w.webp",
+    "lightbox": "images/opt/mid-fi-app-wireframes-1200w-lightbox.webp"
+  },
+  "images/Component library.png": {
+    "source": "images/Component library.png",
+    "slug": "component-library",
+    "sizes": "100vw",
+    "lazy": true,
+    "widths": [
+      480,
+      800,
+      1200
+    ],
+    "webp": {
+      "480": "images/opt/component-library-480w.webp",
+      "800": "images/opt/component-library-800w.webp",
+      "1200": "images/opt/component-library-1200w.webp"
+    },
+    "avif": {
+      "480": "images/opt/component-library-480w.avif",
+      "800": "images/opt/component-library-800w.avif",
+      "1200": "images/opt/component-library-1200w.avif"
+    },
+    "fallback": "images/opt/component-library-800w.webp"
+  },
+  "images/final device wireframe.png": {
+    "source": "images/final device wireframe.png",
+    "slug": "final-device-wireframe",
+    "sizes": "100vw",
+    "lazy": true,
+    "widths": [
+      480,
+      800,
+      1200
+    ],
+    "webp": {
+      "480": "images/opt/final-device-wireframe-480w.webp",
+      "800": "images/opt/final-device-wireframe-800w.webp",
+      "1200": "images/opt/final-device-wireframe-1200w.webp"
+    },
+    "avif": {
+      "480": "images/opt/final-device-wireframe-480w.avif",
+      "800": "images/opt/final-device-wireframe-800w.avif",
+      "1200": "images/opt/final-device-wireframe-1200w.avif"
+    },
+    "fallback": "images/opt/final-device-wireframe-800w.webp"
+  },
+  "images/high fidelity app .png": {
+    "source": "images/high fidelity app .png",
+    "slug": "high-fidelity-app",
+    "sizes": "100vw",
+    "lazy": true,
+    "widths": [
+      480,
+      800,
+      1200
+    ],
+    "webp": {
+      "480": "images/opt/high-fidelity-app-480w.webp",
+      "800": "images/opt/high-fidelity-app-800w.webp",
+      "1200": "images/opt/high-fidelity-app-1200w.webp"
+    },
+    "avif": {
+      "480": "images/opt/high-fidelity-app-480w.avif",
+      "800": "images/opt/high-fidelity-app-800w.avif",
+      "1200": "images/opt/high-fidelity-app-1200w.avif"
+    },
+    "fallback": "images/opt/high-fidelity-app-800w.webp"
+  },
+  "images/before and after.png": {
+    "source": "images/before and after.png",
+    "slug": "before-and-after",
+    "sizes": "100vw",
+    "lazy": true,
+    "widths": [
+      480,
+      800,
+      1200
+    ],
+    "webp": {
+      "480": "images/opt/before-and-after-480w.webp",
+      "800": "images/opt/before-and-after-800w.webp",
+      "1200": "images/opt/before-and-after-1200w.webp"
+    },
+    "avif": {
+      "480": "images/opt/before-and-after-480w.avif",
+      "800": "images/opt/before-and-after-800w.avif",
+      "1200": "images/opt/before-and-after-1200w.avif"
+    },
+    "fallback": "images/opt/before-and-after-800w.webp"
+  },
+  "images/Header.jpg": {
+    "source": "images/Header.jpg",
+    "slug": "header",
+    "sizes": "100vw",
+    "lazy": false,
+    "widths": [
+      640,
+      960,
+      1200,
+      1600
+    ],
+    "webp": {
+      "640": "images/opt/header-640w.webp",
+      "960": "images/opt/header-960w.webp",
+      "1200": "images/opt/header-1200w.webp",
+      "1600": "images/opt/header-1600w.webp"
+    },
+    "avif": {
+      "640": "images/opt/header-640w.avif",
+      "960": "images/opt/header-960w.avif",
+      "1200": "images/opt/header-1200w.avif",
+      "1600": "images/opt/header-1600w.avif"
+    },
+    "fallback": "images/opt/header-640w.webp"
+  },
+  "images/Presentation photo.jpg": {
+    "source": "images/Presentation photo.jpg",
+    "slug": "presentation-photo",
+    "sizes": "(min-width: 768px) 50vw, 100vw",
+    "lazy": true,
+    "widths": [
+      480,
+      800,
+      1200
+    ],
+    "webp": {
+      "480": "images/opt/presentation-photo-480w.webp",
+      "800": "images/opt/presentation-photo-800w.webp",
+      "1200": "images/opt/presentation-photo-1200w.webp"
+    },
+    "avif": {
+      "480": "images/opt/presentation-photo-480w.avif",
+      "800": "images/opt/presentation-photo-800w.avif",
+      "1200": "images/opt/presentation-photo-1200w.avif"
+    },
+    "fallback": "images/opt/presentation-photo-800w.webp"
+  },
+  "images/Team photo.avif": {
+    "source": "images/Team photo.avif",
+    "slug": "team-photo",
+    "sizes": "(min-width: 768px) 50vw, 100vw",
+    "lazy": true,
+    "widths": [
+      480,
+      800,
+      1200
+    ],
+    "webp": {
+      "480": "images/opt/team-photo-480w.webp",
+      "800": "images/opt/team-photo-800w.webp",
+      "1200": "images/opt/team-photo-1200w.webp"
+    },
+    "avif": {
+      "480": "images/opt/team-photo-480w.avif",
+      "800": "images/opt/team-photo-800w.avif",
+      "1200": "images/opt/team-photo-1200w.avif"
+    },
+    "fallback": "images/opt/team-photo-800w.webp"
+  },
+  "images/Finraheader.jpeg": {
+    "source": "images/Finraheader.jpeg",
+    "slug": "finraheader",
+    "sizes": "100vw",
+    "lazy": false,
+    "widths": [
+      640,
+      960,
+      1200,
+      1600
+    ],
+    "webp": {
+      "640": "images/opt/finraheader-640w.webp",
+      "960": "images/opt/finraheader-960w.webp",
+      "1200": "images/opt/finraheader-1200w.webp",
+      "1600": "images/opt/finraheader-1600w.webp"
+    },
+    "avif": {
+      "640": "images/opt/finraheader-640w.avif",
+      "960": "images/opt/finraheader-960w.avif",
+      "1200": "images/opt/finraheader-1200w.avif",
+      "1600": "images/opt/finraheader-1600w.avif"
+    },
+    "fallback": "images/opt/finraheader-640w.webp"
+  },
+  "images/CollaborationFinra.jpg": {
+    "source": "images/CollaborationFinra.jpg",
+    "slug": "collaborationfinra",
+    "sizes": "(min-width: 768px) 50vw, 100vw",
+    "lazy": true,
+    "widths": [
+      480,
+      800,
+      1200
+    ],
+    "webp": {
+      "480": "images/opt/collaborationfinra-480w.webp",
+      "800": "images/opt/collaborationfinra-800w.webp",
+      "1200": "images/opt/collaborationfinra-1200w.webp"
+    },
+    "avif": {
+      "480": "images/opt/collaborationfinra-480w.avif",
+      "800": "images/opt/collaborationfinra-800w.avif",
+      "1200": "images/opt/collaborationfinra-1200w.avif"
+    },
+    "fallback": "images/opt/collaborationfinra-800w.webp"
+  },
+  "images/presentchase.jpg": {
+    "source": "images/presentchase.jpg",
+    "slug": "presentchase",
+    "sizes": "(min-width: 768px) 50vw, 100vw",
+    "lazy": true,
+    "widths": [
+      480,
+      800,
+      1200
+    ],
+    "webp": {
+      "480": "images/opt/presentchase-480w.webp",
+      "800": "images/opt/presentchase-800w.webp",
+      "1200": "images/opt/presentchase-1200w.webp"
+    },
+    "avif": {
+      "480": "images/opt/presentchase-480w.avif",
+      "800": "images/opt/presentchase-800w.avif",
+      "1200": "images/opt/presentchase-1200w.avif"
+    },
+    "fallback": "images/opt/presentchase-800w.webp"
+  },
+  "images/moderated results original slack.png": {
+    "source": "images/moderated results original slack.png",
+    "slug": "moderated-results-original-slack",
+    "sizes": "100vw",
+    "lazy": true,
+    "widths": [
+      480,
+      800,
+      1200
+    ],
+    "webp": {
+      "480": "images/opt/moderated-results-original-slack-480w.webp",
+      "800": "images/opt/moderated-results-original-slack-800w.webp",
+      "1200": "images/opt/moderated-results-original-slack-1200w.webp"
+    },
+    "avif": {
+      "480": "images/opt/moderated-results-original-slack-480w.avif",
+      "800": "images/opt/moderated-results-original-slack-800w.avif",
+      "1200": "images/opt/moderated-results-original-slack-1200w.avif"
+    },
+    "fallback": "images/opt/moderated-results-original-slack-800w.webp"
+  },
+  "images/beforeredesign01.png": {
+    "source": "images/beforeredesign01.png",
+    "slug": "beforeredesign01",
+    "sizes": "(min-width: 768px) 50vw, 100vw",
+    "lazy": true,
+    "widths": [
+      400,
+      640,
+      960
+    ],
+    "webp": {
+      "400": "images/opt/beforeredesign01-400w.webp",
+      "640": "images/opt/beforeredesign01-640w.webp",
+      "960": "images/opt/beforeredesign01-960w.webp"
+    },
+    "avif": {
+      "400": "images/opt/beforeredesign01-400w.avif",
+      "640": "images/opt/beforeredesign01-640w.avif",
+      "960": "images/opt/beforeredesign01-960w.avif"
+    },
+    "fallback": "images/opt/beforeredesign01-640w.webp",
+    "lightbox": "images/opt/beforeredesign01-1200w-lightbox.webp"
+  },
+  "images/afterredesign01.png": {
+    "source": "images/afterredesign01.png",
+    "slug": "afterredesign01",
+    "sizes": "(min-width: 768px) 50vw, 100vw",
+    "lazy": true,
+    "widths": [
+      400,
+      640,
+      960
+    ],
+    "webp": {
+      "400": "images/opt/afterredesign01-400w.webp",
+      "640": "images/opt/afterredesign01-640w.webp",
+      "960": "images/opt/afterredesign01-960w.webp"
+    },
+    "avif": {
+      "400": "images/opt/afterredesign01-400w.avif",
+      "640": "images/opt/afterredesign01-640w.avif",
+      "960": "images/opt/afterredesign01-960w.avif"
+    },
+    "fallback": "images/opt/afterredesign01-640w.webp",
+    "lightbox": "images/opt/afterredesign01-1200w-lightbox.webp"
+  },
+  "images/redesign2before.png": {
+    "source": "images/redesign2before.png",
+    "slug": "redesign2before",
+    "sizes": "(min-width: 768px) 50vw, 100vw",
+    "lazy": true,
+    "widths": [
+      400,
+      640,
+      960
+    ],
+    "webp": {
+      "400": "images/opt/redesign2before-400w.webp",
+      "640": "images/opt/redesign2before-640w.webp",
+      "960": "images/opt/redesign2before-960w.webp"
+    },
+    "avif": {
+      "400": "images/opt/redesign2before-400w.avif",
+      "640": "images/opt/redesign2before-640w.avif",
+      "960": "images/opt/redesign2before-960w.avif"
+    },
+    "fallback": "images/opt/redesign2before-640w.webp",
+    "lightbox": "images/opt/redesign2before-1200w-lightbox.webp"
+  },
+  "images/redeisgn2after.png": {
+    "source": "images/redeisgn2after.png",
+    "slug": "redeisgn2after",
+    "sizes": "(min-width: 768px) 50vw, 100vw",
+    "lazy": true,
+    "widths": [
+      400,
+      640,
+      960
+    ],
+    "webp": {
+      "400": "images/opt/redeisgn2after-400w.webp",
+      "640": "images/opt/redeisgn2after-640w.webp",
+      "960": "images/opt/redeisgn2after-960w.webp"
+    },
+    "avif": {
+      "400": "images/opt/redeisgn2after-400w.avif",
+      "640": "images/opt/redeisgn2after-640w.avif",
+      "960": "images/opt/redeisgn2after-960w.avif"
+    },
+    "fallback": "images/opt/redeisgn2after-640w.webp",
+    "lightbox": "images/opt/redeisgn2after-1200w-lightbox.webp"
+  },
+  "images/usertesting.com.png": {
+    "source": "images/usertesting.com.png",
+    "slug": "usertesting-com",
+    "sizes": "100vw",
+    "lazy": true,
+    "widths": [
+      480,
+      800,
+      1200
+    ],
+    "webp": {
+      "480": "images/opt/usertesting-com-480w.webp",
+      "800": "images/opt/usertesting-com-800w.webp",
+      "1200": "images/opt/usertesting-com-1200w.webp"
+    },
+    "avif": {
+      "480": "images/opt/usertesting-com-480w.avif",
+      "800": "images/opt/usertesting-com-800w.avif",
+      "1200": "images/opt/usertesting-com-1200w.avif"
+    },
+    "fallback": "images/opt/usertesting-com-800w.webp"
+  }
+}

@@ -8,7 +8,7 @@ import re
 import sys
 from pathlib import Path
 
-from PIL import Image
+from PIL import Image, ImageOps
 
 ROOT = Path(__file__).resolve().parents[1]
 IMAGES = ROOT / "images"
@@ -74,6 +74,7 @@ def optimize_image(rel_path: str, config: dict) -> dict:
     slug = slugify(src.name)
     with Image.open(src) as image:
         image.load()
+        image = ImageOps.exif_transpose(image)
         source_width, source_height = image.size
         widths = pick_widths(source_width, config.get("widths", [800]))
         formats = {"webp": {}, "avif": {}}

@@ -30,10 +30,13 @@
   --space-16: 1rem;
   --space-20: 1.25rem;
   --space-24: 1.5rem;
+  --space-28: 1.75rem;
   --space-32: 2rem;
   --space-40: 2.5rem;
   --space-48: 3rem;
   --space-64: 4rem;
+  --space-72: 4.5rem;
+  --space-80: 5rem;
   --space-96: 6rem;
   --space-128: 8rem;
 
@@ -2414,7 +2417,7 @@ body.nest-expand-open {
 }
 
 .case-study-slack .case-study__section#overview {
-  padding-bottom: var(--space-80);
+  padding-bottom: var(--space-48);
 }
 
 .case-study-slack__eyebrow,
@@ -2424,7 +2427,7 @@ body.nest-expand-open {
 
 .slack-project.case-study__section {
   border-top: none;
-  padding: var(--space-48) 0 var(--space-96);
+  padding: var(--space-40) 0 var(--space-64);
 }
 
 .slack-project__eyebrow {
@@ -2503,7 +2506,7 @@ body.nest-expand-open {
   background: rgba(255, 255, 255, 0.05);
   border: 1px solid rgba(255, 255, 255, 0.22);
   border-radius: 24px;
-  padding: clamp(2rem, 3.5vw, 2.75rem) clamp(1.75rem, 3vw, 2.5rem);
+  padding: clamp(1.35rem, 2.4vw, 1.75rem) clamp(1.25rem, 2.2vw, 1.65rem);
   min-height: 100%;
   box-shadow:
     0 0 0 1px rgba(255, 255, 255, 0.04),
@@ -2534,7 +2537,7 @@ body.nest-expand-open {
   letter-spacing: 0.12em;
   text-transform: uppercase;
   color: rgba(255, 255, 255, 0.45);
-  margin: 0 0 var(--space-20);
+  margin: 0 0 var(--space-12);
 }
 
 .slack-project__role-body {
@@ -2542,14 +2545,14 @@ body.nest-expand-open {
   font-size: 1rem;
   font-weight: 400;
   color: rgba(255, 255, 255, 0.88);
-  line-height: 1.85;
+  line-height: 1.65;
   margin: 0;
 }
 
 /* Slack — The Problem */
 .slack-problem.case-study__section {
   border-top: none;
-  padding: var(--space-64) 0 var(--space-96);
+  padding: var(--space-48) 0 var(--space-64);
 }
 
 .slack-problem__eyebrow {
@@ -2608,7 +2611,7 @@ body.nest-expand-open {
 /* Slack — Process */
 .slack-process.case-study__section {
   border-top: none;
-  padding: var(--space-64) 0 var(--space-96);
+  padding: var(--space-48) 0 var(--space-64);
 }
 
 .slack-process__eyebrow {
@@ -2727,7 +2730,7 @@ body.nest-expand-open {
 /* Slack — Heuristic Evaluation */
 .slack-heuristic.case-study__section {
   border-top: none;
-  padding: clamp(1.5rem, 4vh, 3rem) 0;
+  padding: var(--space-48) 0 var(--space-64);
   min-height: auto;
 }
 
@@ -2851,7 +2854,7 @@ body.nest-expand-open {
 /* Slack — Moderated Testing */
 .slack-moderated.case-study__section {
   border-top: none;
-  padding: var(--space-64) 0 var(--space-96);
+  padding: var(--space-48) 0 var(--space-64);
 }
 
 .slack-moderated__eyebrow {
@@ -2895,7 +2898,7 @@ body.nest-expand-open {
 }
 
 .slack-moderated__table-wrap {
-  margin: 0 0 var(--space-96);
+  margin: 0 0 var(--space-48);
   border-radius: 16px;
   overflow: hidden;
   border: 1px solid rgba(255, 255, 255, 0.1);
@@ -3073,7 +3076,7 @@ body.nest-expand-open {
 /* Slack — Designing Changes */
 .slack-design.case-study__section {
   border-top: none;
-  padding: var(--space-48) 0 var(--space-96);
+  padding: var(--space-48) 0 var(--space-64);
 }
 
 .slack-design__eyebrow {
@@ -3324,7 +3327,7 @@ body.slack-expand-open {
 /* Slack — Unmoderated Validation */
 .slack-validate.case-study__section {
   border-top: none;
-  padding: var(--space-64) 0 var(--space-96);
+  padding: var(--space-48) 0 var(--space-64);
 }
 
 .slack-validate__eyebrow {
@@ -3447,7 +3450,7 @@ body.slack-expand-open {
 /* Slack — Business Value */
 .slack-value.case-study__section {
   border-top: none;
-  padding: var(--space-64) 0 var(--space-96);
+  padding: var(--space-48) 0 var(--space-64);
 }
 
 .slack-value__eyebrow {
@@ -3545,14 +3548,14 @@ body.slack-expand-open {
 /* Slack — The Outcome */
 .slack-outcome.case-study__section {
   border-top: none;
-  padding: var(--space-72) 0 0;
-  margin-bottom: clamp(3.5rem, 7vh, 5.5rem);
+  padding: var(--space-48) 0 0;
+  margin-bottom: var(--space-48);
 }
 
 .case-study-slack .thanks-section {
   margin-top: 0;
-  padding-top: clamp(3.5rem, 7vh, 5.5rem);
-  padding-bottom: var(--space-96);
+  padding-top: var(--space-64);
+  padding-bottom: var(--space-64);
 }
 
 .slack-outcome__eyebrow {
